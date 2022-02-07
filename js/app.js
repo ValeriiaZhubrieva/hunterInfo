@@ -6400,9 +6400,28 @@
     const switchDarkThemeInput = document.querySelector("#actions-form__input");
     const wrapper = document.querySelector(".wrapper");
     const body = document.querySelector("body");
+    const theme = localStorage.getItem("theme");
+    document.addEventListener("DOMContentLoaded", (() => {
+        if ("dark" == theme) {
+            wrapper.classList.add("wrapper__dark");
+            body.classList.add("dark");
+            switchDarkThemeInput.setAttribute("checked", "checked");
+        } else if ("white" == theme) {
+            wrapper.classList.remove("wrapper__dark");
+            body.classList.remove("dark");
+            switchDarkThemeInput.removeAttribute("checked");
+        }
+    }));
     switchDarkThemeInput.addEventListener("click", (() => {
         wrapper.classList.toggle("wrapper__dark");
         body.classList.toggle("dark");
+        if (wrapper.classList.contains("wrapper__dark")) {
+            localStorage["theme"] = "dark";
+            switchDarkThemeInput.setAttribute("checked", "checked");
+        } else {
+            localStorage["theme"] = "white";
+            switchDarkThemeInput.removeAttribute("checked");
+        }
     }));
     function toggleActionClass(el, block) {
         el.addEventListener("click", (() => {
