@@ -837,6 +837,12 @@ body::after {
     box-shadow: 0px 2px 10px 1px rgba(15, 15, 15, 0.1);
   }
 }
+.popup-transaction .select__launchpad .select__content {
+  font-family: "Poppins", sans-serif;
+}
+.popup-transaction .select__launchpad .select__option {
+  font-family: "Poppins", sans-serif;
+}
 
 .popup__addtoken-title {
   font-weight: bold;
@@ -1014,6 +1020,10 @@ body::after {
   padding: 0.625rem;
   color: #777e90;
   border-bottom: 1px solid #e6e8ec;
+}
+
+.wrapper.wrapper__dark .popup__content {
+  background-color: #000;
 }
 
 .tabs__navigation {
@@ -2749,6 +2759,11 @@ body::after {
   text-align: right;
 }
 
+.calendar-months,
+.calendar-30day,
+.calendar-week {
+  overflow: auto;
+}
 .calendar-months__items,
 .calendar-30day__items,
 .calendar-week__items {
@@ -3512,6 +3527,7 @@ body::after {
   color: #777e90;
   font-weight: bold;
   margin-bottom: 1.5625rem;
+  position: relative;
 }
 @media (min-width: 73.75em) {
   .information__inner {
@@ -3662,6 +3678,110 @@ body::after {
     text-overflow: ellipsis;
     white-space: nowrap;
   }
+}
+.information .contract__btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.information .dropdown-contract {
+  position: absolute;
+  right: -10px;
+  top: 0;
+  visibility: hidden;
+  opacity: 0;
+  background: #ffffff;
+  border-radius: 8px;
+  z-index: 10;
+  padding: 1rem;
+  width: 22.5rem;
+  color: #777e90;
+  transition: all 0.3s ease 0s;
+}
+@media (min-width: 73.75em) {
+  .information .dropdown-contract {
+    padding: 1rem;
+  }
+}
+@media (min-width: 20em) and (max-width: 73.75em) {
+  @supports (padding: clamp( 0.625rem , 0.4854651163rem  +  0.6976744186vw , 1rem )) {
+    .information .dropdown-contract {
+      padding: clamp( 0.625rem , 0.4854651163rem  +  0.6976744186vw , 1rem );
+    }
+  }
+  @supports not (padding: clamp( 0.625rem , 0.4854651163rem  +  0.6976744186vw , 1rem )) {
+    .information .dropdown-contract {
+      padding: calc(0.625rem + 0.375 * (100vw - 20rem) / 53.75);
+    }
+  }
+}
+@media (max-width: 20em) {
+  .information .dropdown-contract {
+    padding: 0.625rem;
+  }
+}
+.information .dropdown-contract._active {
+  top: 135%;
+  visibility: visible;
+  opacity: 1;
+}
+@media (max-width: 29.99875em) {
+  .information .dropdown-contract {
+    right: -30px;
+    width: 18.75rem;
+  }
+}
+.information .dropdown-contract__inner {
+  max-height: 12.5rem;
+  overflow: auto;
+}
+.information .dropdown-contract__item {
+  display: flex;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid #e6e8ec;
+  font-size: 0.875rem;
+  align-items: center;
+  width: 100%;
+  padding-right: 1.25rem;
+}
+@media (min-width: 73.75em) {
+  .information .dropdown-contract__item {
+    gap: 0.9375rem;
+  }
+}
+@media (min-width: 20em) and (max-width: 73.75em) {
+  @supports (gap: clamp( 0.625rem , 0.5087209302rem  +  0.5813953488vw , 0.9375rem )) {
+    .information .dropdown-contract__item {
+      gap: clamp( 0.625rem , 0.5087209302rem  +  0.5813953488vw , 0.9375rem );
+    }
+  }
+  @supports not (gap: clamp( 0.625rem , 0.5087209302rem  +  0.5813953488vw , 0.9375rem )) {
+    .information .dropdown-contract__item {
+      gap: calc(0.625rem + 0.3125 * (100vw - 20rem) / 53.75);
+    }
+  }
+}
+@media (max-width: 20em) {
+  .information .dropdown-contract__item {
+    gap: 0.625rem;
+  }
+}
+.information .dropdown-contract__item:not(:last-child) {
+  margin-bottom: 0.9375rem;
+}
+.information .dropdown-contract__item-name {
+  color: #5d5fef;
+}
+.information .dropdown-contract__item-img {
+  width: 1.5rem;
+  height: 1.5rem;
+  object-fit: cover;
+}
+.information .dropdown-contract__item-btns {
+  display: flex;
+  margin-left: auto;
+  gap: 0.625rem;
 }
 .information__grafik {
   display: flex;
@@ -3934,7 +4054,7 @@ body::after {
   border-radius: 12px;
   max-width: 38.75rem;
   display: grid;
-  grid-template-columns: 70px 95px 85px 90px 100px 85px 95px;
+  grid-template-columns: 70px 85px 90px 100px 85px 95px;
   text-align: center;
   max-height: 21.875rem;
   overflow: auto;
@@ -3997,6 +4117,264 @@ body::after {
 }
 .diagram-table__circle--3::before {
   background-color: #9757d7;
+}
+
+.wrapper.wrapper__dark {
+  color: #fff;
+}
+.wrapper.wrapper__dark .header,
+.wrapper.wrapper__dark .footer {
+  background-color: #000;
+}
+.wrapper.wrapper__dark .header {
+  border-bottom: 1px solid #33383f;
+}
+.wrapper.wrapper__dark .header .header__logo svg path {
+  fill: #fff;
+}
+.wrapper.wrapper__dark .footer {
+  border-top: 1px solid #33383f;
+}
+.wrapper.wrapper__dark .footer .footer__logo svg path {
+  fill: #fff;
+}
+.wrapper.wrapper__dark .footer .footer__contacts-social svg path {
+  fill: #fff;
+}
+.wrapper.wrapper__dark .page {
+  background-color: #1a1d1f;
+}
+.wrapper.wrapper__dark .home__inner {
+  border: 2px solid #33383f;
+}
+.wrapper.wrapper__dark .table__body-row {
+  border: 1px solid #33383f;
+}
+.wrapper.wrapper__dark .table__body-row-item {
+  background-color: #000;
+}
+.wrapper.wrapper__dark .table__body-item--title {
+  color: #fff;
+}
+.wrapper.wrapper__dark .table__body-item--open {
+  color: #fff;
+}
+.wrapper.wrapper__dark .icon-menu::before, .wrapper.wrapper__dark .icon-menu::after {
+  background-color: #fff;
+}
+.wrapper.wrapper__dark .icon-menu span {
+  background-color: #fff;
+}
+.wrapper.wrapper__dark .menu__body {
+  background-color: #000;
+}
+.wrapper.wrapper__dark .select__title {
+  background-color: #000;
+}
+.wrapper.wrapper__dark .select__options {
+  background-color: #000;
+  color: #fff;
+  border: 1px solid #33383f;
+}
+.wrapper.wrapper__dark .user__item svg path {
+  stroke: #fff;
+}
+@media (max-width: 61.99875em) {
+  .wrapper.wrapper__dark .header.header__user .actions__currency .select {
+    border-top: 1px solid #33383f;
+    border-bottom: 1px solid #33383f;
+  }
+}
+.wrapper.wrapper__dark .menu__user-actions--btn svg path {
+  stroke: #fff;
+}
+.wrapper.wrapper__dark .ico__inner {
+  border: 2px solid #33383f;
+}
+.wrapper.wrapper__dark .ico-table__body-row {
+  border: 1px solid #33383f;
+}
+.wrapper.wrapper__dark .ico-table__body-item--title {
+  color: #fff;
+}
+.wrapper.wrapper__dark .whitelist__title span {
+  color: #fff;
+}
+.wrapper.wrapper__dark .whitelist__inner {
+  background-color: transparent;
+}
+.wrapper.wrapper__dark .table__whitelist-item {
+  border-bottom: 1px solid #33383f;
+}
+.wrapper.wrapper__dark .table__whitelist-item--title {
+  color: #fff;
+}
+.wrapper.wrapper__dark .account-tabs__body {
+  background-color: #000;
+}
+.wrapper.wrapper__dark .account-table__item {
+  border: 1px solid #33383f;
+}
+.wrapper.wrapper__dark .admin-tabs__body {
+  background-color: #000;
+}
+.wrapper.wrapper__dark .admin-form__input {
+  background-color: transparent;
+}
+.wrapper.wrapper__dark .admin-table__item {
+  border: 1px solid #33383f;
+}
+.wrapper.wrapper__dark .information__body {
+  border: 2px solid #33383f;
+}
+.wrapper.wrapper__dark .information__soc svg path {
+  fill: #fff;
+}
+.wrapper.wrapper__dark .information__contract {
+  background-color: #000;
+}
+.wrapper.wrapper__dark .information__grafik-block {
+  background-color: #000;
+}
+.wrapper.wrapper__dark .diagram-table__item {
+  border: 1px solid #33383f;
+}
+.wrapper.wrapper__dark .information__diagram-block {
+  border: 2px solid #33383f;
+}
+.wrapper.wrapper__dark .information__inform-inner {
+  background-color: #000;
+}
+.wrapper.wrapper__dark .information__inform-table-block {
+  background-color: #000;
+}
+.wrapper.wrapper__dark .inform-table__item {
+  border: 1px solid #33383f;
+}
+.wrapper.wrapper__dark .dropdown-contract {
+  background-color: #000;
+}
+.wrapper.wrapper__dark .portfolio__list-info {
+  background-color: #000;
+  border: 1px solid #33383f;
+}
+.wrapper.wrapper__dark .info-list__body-item {
+  border-bottom: 1px solid #33383f;
+}
+.wrapper.wrapper__dark .info-list__body-item:first-child {
+  border-top: 1px solid #33383f;
+}
+.wrapper.wrapper__dark .calendar-months__items,
+.wrapper.wrapper__dark .calendar-30day__items,
+.wrapper.wrapper__dark .calendar-week__items {
+  background-color: #000;
+}
+.wrapper.wrapper__dark .calendar-week__item,
+.wrapper.wrapper__dark .calendar-months__item {
+  border: 1px solid #33383f;
+}
+.wrapper.wrapper__dark .calendar-months__day {
+  border-bottom: 2px solid #33383f;
+}
+.wrapper.wrapper__dark .portfolio__assets-tabs__navigation {
+  background-color: #000;
+}
+.wrapper.wrapper__dark .assets-table__body-row,
+.wrapper.wrapper__dark .history-table__body-row,
+.wrapper.wrapper__dark .history-table__head,
+.wrapper.wrapper__dark .assets-table__head {
+  border-bottom: 1px solid #33383f;
+}
+.wrapper.wrapper__dark .assets-table__body-item--title {
+  color: #fff;
+}
+.wrapper.wrapper__dark .portfolio__dropdown {
+  background-color: #000;
+  border: 1px solid #33383f;
+}
+.wrapper.wrapper__dark .dropdown__top {
+  border-bottom: 1px solid #33383f;
+}
+.wrapper.wrapper__dark .user__dropdown {
+  background-color: #000;
+  border: 1px solid #33383f;
+}
+@media (any-hover: hover) {
+  .wrapper.wrapper__dark .user__dropdown-btn:hover {
+    color: #fff;
+    background-color: #33383f;
+  }
+}
+.wrapper.wrapper__dark .dropdown-contract__item {
+  border-bottom: 1px solid #33383f;
+}
+
+body.dark .popup__content {
+  background-color: #000;
+}
+body.dark .popup__close svg path {
+  fill: #fff;
+}
+body.dark .popup-add__title {
+  color: #fff;
+}
+body.dark .popup-add-tabs__navigation,
+body.dark .popup-transaction-tabs__navigation {
+  background-color: #1a1d1f;
+}
+body.dark .popup-add__input {
+  background-color: transparent;
+  border: 2px solid #33383f;
+}
+body.dark .popup-add__item-title {
+  color: #fff;
+}
+body.dark .popup-transaction__title {
+  color: #fff;
+}
+body.dark .popup-transaction .select__title {
+  background-color: transparent;
+  border: 1px solid #33383f;
+}
+body.dark .popup-transaction .select__options {
+  background-color: #000;
+  border: 1px solid #33383f;
+}
+body.dark .popup-transaction__input {
+  background-color: transparent;
+  border: 1px solid #33383f;
+}
+body.dark .select__launchpad .select__title {
+  border: none;
+}
+body.dark .popup-login .popup__content {
+  border: 2px solid #33383f;
+}
+body.dark .popup-login__title {
+  color: #fff;
+}
+body.dark .popup-login__btn {
+  border: 2px solid #33383f;
+}
+body.dark .popup-email__input {
+  background-color: transparent;
+  border: 2px solid #33383f;
+}
+body.dark .popup-error__btn {
+  border: 2px solid #33383f;
+}
+body.dark .popup__addtoken-title {
+  color: #fff;
+}
+body.dark .popup__addtoken-input {
+  background-color: transparent;
+  border: 2px solid #33383f;
+}
+body.dark .table-token__item {
+  border: 1px solid #33383f;
+}
+body.dark .popup__addunclock-title {
+  color: #fff;
 }
 .tippy-box[data-animation=fade][data-state=hidden] {
   opacity: 0;

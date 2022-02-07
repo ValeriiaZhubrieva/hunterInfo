@@ -6399,8 +6399,10 @@
     da.init();
     const switchDarkThemeInput = document.querySelector("#actions-form__input");
     const wrapper = document.querySelector(".wrapper");
+    const body = document.querySelector("body");
     switchDarkThemeInput.addEventListener("click", (() => {
         wrapper.classList.toggle("wrapper__dark");
+        body.classList.toggle("dark");
     }));
     function toggleActionClass(el, block) {
         el.addEventListener("click", (() => {
@@ -6416,6 +6418,11 @@
         const unlockBtnDrop = document.querySelector(".popup__addunclock-add");
         const unlockDropDown = document.querySelector(".popup__addunclock-dropdown");
         toggleActionClass(unlockBtnDrop, unlockDropDown);
+    }
+    if (document.querySelector(".contract__btn")) {
+        const metamaskBtnDrop = document.querySelector(".contract__btn");
+        const metamaskDropDown = document.querySelector(".dropdown-contract");
+        toggleActionClass(metamaskBtnDrop, metamaskDropDown);
     }
     window["FLS"] = true;
     isWebp();
