@@ -2646,6 +2646,11 @@ body::after {
   background-color: #6a57e0;
   color: #fff;
 }
+.portfolio .portfolio__button {
+  display: flex;
+  align-items: center;
+  gap: 0.625rem;
+}
 
 .info-list__block {
   display: flex;
@@ -4308,6 +4313,15 @@ body::after {
 .wrapper.wrapper__dark .dropdown-contract__item {
   border-bottom: 1px solid #33383f;
 }
+@media (max-width: 29.99875em) {
+  .wrapper.wrapper__dark .table__body-item {
+    border-right: 1px solid #33383f;
+    border-left: 1px solid #33383f;
+  }
+  .wrapper.wrapper__dark .whitelist__title {
+    color: #fff;
+  }
+}
 
 body.dark .popup__content {
   background-color: #000;
@@ -4375,6 +4389,12 @@ body.dark .table-token__item {
 }
 body.dark .popup__addunclock-title {
   color: #fff;
+}
+body.dark .popup__addunclock-dropdown {
+  background-color: #000;
+}
+body.dark .popup__addunclock-btn {
+  border-bottom: 1px solid #33383f;
 }
 .tippy-box[data-animation=fade][data-state=hidden] {
   opacity: 0;
