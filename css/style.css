@@ -115,6 +115,7 @@ body {
   overflow: hidden;
   touch-action: none;
 }
+
 .wrapper {
   min-height: 100%;
   display: flex;
@@ -2620,13 +2621,17 @@ body::after {
 }
 @media (max-width: 47.99875em) {
   .portfolio .tabs__navigation::before {
-    width: 1.3125rem;
-    height: 1.875rem;
-    background-image: url("../img/icons/scroll.svg");
     content: "";
+    width: 1.875rem;
+    height: 1.875rem;
+    background-image: url("../img/icons/swipe-two.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     position: absolute;
     right: 10px;
     top: 120px;
+    z-index: 10;
   }
 }
 .portfolio .tabs__title {
