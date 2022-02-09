@@ -6425,6 +6425,7 @@
     }));
     function toggleActionClass(el, block) {
         el.addEventListener("click", (() => {
+            el.classList.toggle("_active");
             block.classList.toggle("_active");
         }));
     }
@@ -6442,6 +6443,16 @@
         const metamaskBtnDrop = document.querySelector(".contract__btn");
         const metamaskDropDown = document.querySelector(".dropdown-contract");
         toggleActionClass(metamaskBtnDrop, metamaskDropDown);
+    }
+    if (document.querySelector(".settings__btn")) {
+        const assetsBtnDrop = document.querySelector(".settings__btn");
+        const assetsDropDown = document.querySelector(".settings__dropdown");
+        toggleActionClass(assetsBtnDrop, assetsDropDown);
+    }
+    if (document.querySelector(".portfolio__assets-filter__more")) {
+        const filterBtnDrop = document.querySelector(".portfolio__assets-filter__more");
+        const filtersDropDown = document.querySelector(".portfolio__assets-filter__dropdown");
+        toggleActionClass(filterBtnDrop, filtersDropDown);
     }
     window["FLS"] = true;
     isWebp();

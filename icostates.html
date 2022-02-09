@@ -6,14 +6,14 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20220208204811">
+	<link rel="stylesheet" href="css/style.min.css?_v=20220209233205">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 <body>
-	<div class="wrapper">
+	<div class="wrapper wrapper__ico">
 		<header class="header header__user">
 			<div class="header__container">
 				<div class="header__body">
@@ -1158,6 +1158,91 @@
 		</div>
 	</div>
 
+	<div id="popup__share" aria-hidden="true" class="popup popup__share">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<button data-close type="button" class="popup__close">
+					<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path fill-rule="evenodd" clip-rule="evenodd" d="M12 20C16.4183 20 20 16.4183 20 12C20 7.58172 16.4183 4 12 4C7.58172 4 4 7.58172 4 12C4 16.4183 7.58172 20 12 20ZM12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" fill="black" />
+						<path fill-rule="evenodd" clip-rule="evenodd" d="M8.29289 8.29289C8.68342 7.90237 9.31658 7.90237 9.70711 8.29289L12 10.5858L14.2929 8.29289C14.6834 7.90237 15.3166 7.90237 15.7071 8.29289C16.0976 8.68342 16.0976 9.31658 15.7071 9.70711L13.4142 12L15.7071 14.2929C16.0976 14.6834 16.0976 15.3166 15.7071 15.7071C15.3166 16.0976 14.6834 16.0976 14.2929 15.7071L12 13.4142L9.70711 15.7071C9.31658 16.0976 8.68342 16.0976 8.29289 15.7071C7.90237 15.3166 7.90237 14.6834 8.29289 14.2929L10.5858 12L8.29289 9.70711C7.90237 9.31658 7.90237 8.68342 8.29289 8.29289Z" fill="black" />
+					</svg>
+				</button>
+				<div class="popup__share-body">
+					<div class="popup__share-title">Share Portfolio</div>
+					<div class="popup__share-items">
+						<div class="popup__share-text">Permissions</div>
+						<div class="popup__share__select">
+							<select name="form[]" class="form">
+								<option value="1" selected>Launchpad</option>
+								<option value="2">Launchpad</option>
+								<option value="3">Launchpad</option>
+								<option value="4">Launchpad</option>
+							</select>
+							<div class="popup__share__currency">Full</div>
+						</div>
+						<div class="popup__share__select">
+							<select name="form[]" class="form">
+								<option value="1" selected>Tokens HoID</option>
+								<option value="2">Tokens HoID</option>
+								<option value="3">Tokens HoID</option>
+								<option value="4">Tokens HoID</option>
+							</select>
+							<div class="popup__share__currency">Full</div>
+						</div>
+						<div class="popup__share__select">
+							<select name="form[]" class="form">
+								<option value="1" selected>IDO Token</option>
+								<option value="2">IDO Token</option>
+								<option value="3">IDO Token</option>
+								<option value="4">IDO Token</option>
+							</select>
+							<div class="popup__share__currency">Full</div>
+						</div>
+						<div class="popup__share__select">
+							<select name="form[]" class="form">
+								<option value="1" selected>IDO | Buy Acc</option>
+								<option value="2">IDO | Buy Acc</option>
+								<option value="3">IDO | Buy Acc</option>
+								<option value="4">IDO | Buy Acc</option>
+							</select>
+							<div class="popup__share__currency">Full</div>
+						</div>
+						<div class="popup__share__select">
+							<select name="form[]" class="form">
+								<option value="1" selected>IDO | Invest</option>
+								<option value="2">IDO | Invest</option>
+								<option value="3">IDO | Invest</option>
+								<option value="4">IDO | Invest</option>
+							</select>
+							<div class="popup__share__currency">Full</div>
+						</div>
+						<div class="popup__share__select">
+							<select name="form[]" class="form">
+								<option value="1" selected>Farm</option>
+								<option value="2">Farm</option>
+								<option value="3">Farm</option>
+								<option value="4">Farm</option>
+							</select>
+							<div class="popup__share__currency">Full</div>
+						</div>
+						<div class="popup__share__select">
+							<select name="form[]" class="form">
+								<option value="1" selected>WahLisT</option>
+								<option value="2">WahLisT</option>
+								<option value="3">WahLisT</option>
+								<option value="4">WahLisT</option>
+							</select>
+							<div class="popup__share__currency">Hide</div>
+						</div>
+						<div class="popup__share-text">Sharing Link</div>
+						<input autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="" value="https://" class="input popup__share-input">
+						<button type="button" class="popup__share-btn">Copy</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
 	<!-- <div id="popup" aria-hidden="true" class="popup">
 	<div class="popup__wrapper">
 		<div class="popup__content">
@@ -1167,7 +1252,7 @@
 		</div>
 	</div>
 </div> -->
-	<script src="js/app.min.js?_v=20220208204811"></script>
+	<script src="js/app.min.js?_v=20220209233205"></script>
 </body>
 
 </html>
