@@ -6449,10 +6449,13 @@
         const assetsDropDown = document.querySelector(".settings__dropdown");
         toggleActionClass(assetsBtnDrop, assetsDropDown);
     }
-    if (document.querySelector(".portfolio__assets-filter__more")) {
-        const filterBtnDrop = document.querySelector(".portfolio__assets-filter__more");
-        const filtersDropDown = document.querySelector(".portfolio__assets-filter__dropdown");
-        toggleActionClass(filterBtnDrop, filtersDropDown);
+    if (document.querySelector(".portfolio__assets-filter")) {
+        const filterBtns = document.querySelectorAll(".portfolio__assets-filter");
+        filterBtns.forEach((btn => {
+            btn.addEventListener("click", (e => {
+                btn.classList.toggle("_active");
+            }));
+        }));
     }
     window["FLS"] = true;
     isWebp();
