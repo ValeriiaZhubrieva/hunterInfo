@@ -2023,6 +2023,9 @@ body::after {
   background: #ffffff;
   border-radius: 24px;
 }
+.whitelist__inner .admin-tabs__item-pagination {
+  padding-bottom: 1.5625rem;
+}
 
 .whitelist-tabs {
   padding: 1.5625rem;
