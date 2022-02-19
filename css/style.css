@@ -5027,6 +5027,18 @@ body.dark .select__options {
   border: 1px solid #33383f;
   background-color: #000;
 }
+body.dark .admin-table__item--input {
+  background-color: transparent;
+  border: 1px solid #33383f;
+}
+body.dark .popup-transaction__select .select__title {
+  border: 1px solid #33383f;
+  background-color: transparent;
+}
+body.dark .popup-transaction__select .select__options {
+  border: 1px solid #33383f;
+  background-color: #000;
+}
 .tippy-box[data-animation=fade][data-state=hidden] {
   opacity: 0;
 }
