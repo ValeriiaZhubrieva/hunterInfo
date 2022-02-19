@@ -274,20 +274,35 @@ body {
   top: 45px;
 }
 
-.popup-transaction .select__title {
+.popup-transaction .select__title,
+.popup__addtoken .select__title {
   font-weight: 500;
   background-color: #fff;
   border: 2px solid #e6e8ec;
   padding: 0.5625rem 0.875rem;
   border-radius: 12px;
+  color: #777e90;
 }
-.popup-transaction .select__value {
+.popup-transaction .select__value,
+.popup__addtoken .select__value {
   padding-left: 0;
   padding-right: 0.625rem;
 }
-.popup-transaction .select__options {
+.popup-transaction .select__options,
+.popup__addtoken .select__options {
   top: 45px;
   color: #777e90;
+}
+
+.popup__addtoken .select {
+  width: 13.75rem;
+}
+.popup__addtoken .select__title {
+  font-size: 0.875rem;
+  padding: 0.1875rem 0.875rem;
+}
+.popup__addtoken .select__option {
+  font-size: 0.875rem;
 }
 
 .select__launchpad .select {
@@ -426,9 +441,7 @@ body::after {
   min-height: 100%;
   flex: 1 1 auto;
   width: 100%;
-  display: flex;
   justify-content: center;
-  align-items: center;
 }
 
 .popup__content {
@@ -916,9 +929,9 @@ body::after {
 }
 .popup__addtoken-table {
   display: grid;
-  grid-template-columns: 120px minmax(70px, 105px) minmax(50px, 105px) 140px 80px 80px 120px;
+  grid-template-columns: 120px minmax(70px, 105px) minmax(50px, 105px) 220px 80px 120px;
   overflow: auto;
-  margin: 2rem 0 2rem 0;
+  margin: 2rem 0 1.25rem 0;
 }
 .popup__addtoken-table::-webkit-scrollbar {
   width: 0;
@@ -946,22 +959,44 @@ body::after {
 .popup__addtoken-label {
   display: block;
   font-size: 0.875rem;
+  gap: 1.25rem;
   color: #777e90;
   margin-bottom: 1rem;
 }
+.popup__addtoken-label--items {
+  display: flex;
+  gap: 1.25rem;
+}
+.popup__addtoken-label--items .popup__addtoken-text {
+  margin-bottom: 0;
+}
 .popup__addtoken-label svg {
   display: inline-block;
-  margin: 0 1rem -0.625rem 0;
 }
-@media (max-width: 29.99875em) {
-  .popup__addtoken-label svg {
-    margin-right: 0.625rem;
-  }
+.popup__addtoken-items {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.9375rem;
 }
-@media (max-width: 21.25em) {
-  .popup__addtoken-label svg {
-    margin-bottom: 0.625rem;
-  }
+.popup__addtoken .item-addtoken {
+  display: flex;
+  align-items: center;
+  gap: 0.625rem;
+  background-color: #5d5fef;
+  color: #fff;
+  border-radius: 5px;
+  padding: 0.125rem 0.3125rem;
+}
+.popup__addtoken .item-addtoken__btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.25rem;
+  height: 1.25rem;
+}
+.popup__addtoken .item-addtoken__btn svg path {
+  fill: #fff;
 }
 .popup__addtoken-text {
   margin-bottom: 0.75rem;
@@ -969,11 +1004,15 @@ body::after {
 .popup__addtoken-input {
   color: #777e90;
   font-size: 0.875rem;
+  line-height: 1;
   border: 2px solid #e6e8ec;
   border-radius: 12px;
   width: 13.75rem;
-  height: 3rem;
-  padding: 0.3125rem 1.5rem;
+  height: 2.5rem;
+  padding: 0.3125rem 0.9375rem;
+}
+.popup__addtoken .popup-transaction__input {
+  padding: 0.5rem 0.9375rem;
 }
 .popup__addtoken-save {
   display: block;
@@ -987,6 +1026,102 @@ body::after {
   max-width: 21.875rem;
   width: 100%;
   margin: 2.625rem auto 0 auto;
+}
+.popup__addtoken-btn {
+  display: block;
+  position: relative;
+  color: #777e90;
+  padding-right: 2.5rem;
+  margin-left: auto;
+  margin-bottom: 1.25rem;
+}
+.popup__addtoken-btn::before {
+  content: "";
+  right: 0;
+  top: 50%;
+  transform: translate(0, -50%);
+  position: absolute;
+  background-image: url("../img/icons/plus.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 1.25rem;
+  height: 1.25rem;
+}
+.popup__addtoken .popup-transaction__blocks {
+  position: relative;
+}
+@media (max-width: 47.99875em) {
+  .popup__addtoken .popup-transaction__blocks {
+    flex-wrap: wrap;
+    row-gap: 0rem;
+  }
+}
+.popup__addtoken-plus {
+  display: block;
+  position: absolute;
+  color: #777e90;
+  padding-right: 2.5rem;
+  right: -1.5625rem;
+  bottom: 2.1875rem;
+}
+.popup__addtoken-plus::before {
+  content: "";
+  right: 0;
+  top: 50%;
+  transform: translate(0, -50%);
+  position: absolute;
+  background-image: url("../img/icons/plus.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 1.25rem;
+  height: 1.25rem;
+}
+.popup__addtoken input[type=datetime-local] {
+  border: none;
+}
+.popup__addtoken input[type=datetime-local]::-webkit-calendar-picker-indicator {
+  color: transparent;
+  opacity: 1;
+  background: url("../img/icons/calendar.svg") no-repeat center;
+  background-size: contain;
+}
+.popup__addtoken .table-token__item--date {
+  padding: 0;
+}
+.popup__addtoken .popup-transaction__dateblock {
+  flex-wrap: wrap;
+}
+.popup__addtoken-soc {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  column-gap: 4.375rem;
+  row-gap: 1.25rem;
+}
+@media (max-width: 47.99875em) {
+  .popup__addtoken-soc {
+    grid-template-columns: 300px;
+  }
+}
+@media (max-width: 29.99875em) {
+  .popup__addtoken-soc {
+    grid-template-columns: 1fr;
+  }
+}
+.popup__addtoken-soc .popup__addtoken-label {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1.25rem;
+  white-space: nowrap;
+}
+@media (max-width: 29.99875em) {
+  .popup__addtoken-soc .popup__addtoken-input {
+    width: 100%;
+  }
+}
+.popup__addtoken .popup-transaction__label {
+  color: #777e90;
+  font-size: 0.875rem;
 }
 
 .popup__addunclock .popup__close {
@@ -1005,11 +1140,29 @@ body::after {
   box-shadow: 0px 8px 16px -8px rgba(15, 15, 15, 0.1);
   border-radius: 24px;
   max-width: 19.375rem;
+  position: relative;
+  z-index: 155;
 }
 @media (max-width: 29.99875em) {
   .popup__addunclock .popup__content {
     padding: 1.5rem;
   }
+}
+.popup__addunclock .popup__wrapper {
+  position: relative;
+}
+.popup__addunclock .popup__overlay {
+  background-color: rgba(255, 255, 255, 0.5);
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 0;
+  transition: opacity 0.8s ease 0s;
+  z-index: 150;
 }
 .popup__addunclock-title {
   color: #000;
@@ -1023,12 +1176,14 @@ body::after {
   gap: 0.75rem;
   position: relative;
 }
-.popup__addunclock-label svg {
+.popup__addunclock-delete {
   position: absolute;
   width: 0.9375rem;
   height: 0.9375rem;
-  margin: 0;
   right: -20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .popup__addunclock-text {
   margin: 0;
@@ -1037,6 +1192,10 @@ body::after {
   width: 100%;
   height: 2.375rem;
   color: #777e90;
+  padding-right: 2.5rem;
+}
+.popup__addunclock-input--linear {
+  padding-left: 0.3125rem;
 }
 .popup__addunclock-addblock {
   position: relative;
@@ -1077,6 +1236,13 @@ body::after {
   padding: 0.625rem;
   color: #777e90;
   border-bottom: 1px solid #e6e8ec;
+}
+.popup__addunclock-icon {
+  position: absolute;
+  right: 10px;
+}
+.popup__addunclock-icon--linear {
+  right: 110px;
 }
 
 .popup__share .popup__close {
