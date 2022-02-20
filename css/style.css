@@ -4902,7 +4902,13 @@ body::after {
 }
 .launchpad__table {
   display: grid;
-  grid-template-columns: 80px 1fr 150px 150px 150px 150px;
+  grid-template-columns: 80px 470px 150px 150px 150px 150px;
+  overflow: auto;
+  scrollbar-width: none;
+}
+.launchpad__table::-webkit-scrollbar {
+  width: 0;
+  height: 0;
 }
 .launchpad__table-item {
   padding: 0.625rem 0.9375rem;
