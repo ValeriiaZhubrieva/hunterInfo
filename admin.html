@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20220220140341">
+	<link rel="stylesheet" href="css/style.min.css?_v=20220220221448">
 	<link rel="shortcut icon" href="img/favicon/favicon.ico">
 	<link rel="apple-touch-icon" sizes="180x180" href="img/favicon//apple-touch-icon.png">
 	<link rel="icon" type="image/png" sizes="32x32" href="img/favicon//favicon-32x32.png">
@@ -21,6 +21,38 @@
 	<div class="wrapper">
 		<header class="header ">
 			<div class="header__container">
+				<div class="header__top">
+					<div class="header__top-left">
+						<div class="header__top-left-info">
+							Криптовалюты
+							<span class="header__top-left-num">14005</span>
+						</div>
+						<div class="header__top-left-info">
+							Капитал рынка
+							<span class="header__top-left-price">$ 1.84T</span>
+							<span class="header__top-left-currency">-3.32%</span>
+						</div>
+					</div>
+					<div class="header__top-right">
+						<div class="actions-languages">
+							<a href="#" class="actions-language actions-language--blue">En</a>
+							<a href="#" class="actions-language">Ru</a>
+						</div>
+						<div class="actions__currency">
+							<select name="form[]" class="form">
+								<option value="1" selected>USD</option>
+								<option value="2">BTC</option>
+								<option value="3">ETH</option>
+								<option value="4">EUR</option>
+								<option value="4">BNB</option>
+							</select>
+						</div>
+						<form action="#" class="actions-form">
+							<label class="actions-form__label" for="actions-form__input">Dark theme</label>
+							<input autocomplete="off" type="checkbox" name="form[]" data-error="Ошибка" placeholder="" class="input actions-form__input" id="actions-form__input">
+						</form>
+					</div>
+				</div>
 				<div class="header__body">
 					<a href="index.html" class="header__logo">
 						<svg width="162" height="32" viewBox="0 0 162 32" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -41,12 +73,13 @@
 								</svg>
 							</a>
 							<ul class="menu__list">
-								<li class="menu__item"><a href="icostates.html" class="menu__link">IDO/ICO</a></li>
-								<li class="menu__item"><a href="#" class="menu__link">Mint NFT</a></li>
-								<li class="menu__item"><a href="#" class="menu__link">IGO</a></li>
-								<li class="menu__item"><a href="whitelist.html" class="menu__link">Whitelist/AirDrop</a></li>
-								<li class="menu__item"><a href="#" class="menu__link">News</a></li>
-								<li class="menu__item"><a href="#" class="menu__link">Roi Ratted</a></li>
+								<li class="menu__item"><a href="#" class="menu__link">About</a></li>
+								<li class="menu__item"><a href="#" class="menu__link">Tokens</a></li>
+								<li class="menu__item"><a href="#" class="menu__link">Vesting</a></li>
+								<li class="menu__item"><a href="icostates.html" class="menu__link"> Upcoming IDO</a></li>
+								<li class="menu__item"><a href="whitelist.html" class="menu__link">Whitelist</a></li>
+								<li class="menu__item"><a href="launchpad.html" class="menu__link">Launchpad</a></li>
+								<li class="menu__item menu__item--pulse"><a href="portfolio.html" class="menu__link">Portfolio</a></li>
 							</ul>
 							<div class="menu__user-actions">
 								<a class="menu__user-actions--btn" href="#">
@@ -75,24 +108,7 @@
 						</nav>
 					</div>
 					<div class="header__actions actions">
-						<form action="#" class="actions-form" data-da=".footer__body, 479.98, 0">
-							<label class="actions-form__label" for="actions-form__input">Dark theme</label>
-							<input autocomplete="off" type="checkbox" name="form[]" data-error="Ошибка" placeholder="" class="input actions-form__input" id="actions-form__input">
-						</form>
-						<div class="actions-languages">
-							<a href="#" class="actions-language actions-language--blue">En</a>
-							<a href="#" class="actions-language">Ru</a>
-						</div>
 						<button type="button" class="actions__btn" data-popup="#popup-login">Login</button>
-						<div class="actions__currency" data-da=".menu__user-actions, 991.98, 0">
-							<select name="form[]" class="form">
-								<option value="1" selected>USD</option>
-								<option value="2">BTC</option>
-								<option value="3">ETH</option>
-								<option value="4">EUR</option>
-								<option value="4">BNB</option>
-							</select>
-						</div>
 						<div class="actions__user user">
 							<a class="user__item" href="#">
 								<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -108,7 +124,6 @@
 						</div>
 						<button type="button" class="menu__icon icon-menu"><span></span></button>
 					</div>
-
 				</div>
 			</div>
 		</header>
@@ -1007,7 +1022,7 @@
 		</div>
 	</div>
 </div> -->
-	<script src="js/app.min.js?_v=20220220140341"></script>
+	<script src="js/app.min.js?_v=20220220221448"></script>
 </body>
 
 </html>
