@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20220219201800">
+	<link rel="stylesheet" href="css/style.min.css?_v=20220220132335">
 	<link rel="shortcut icon" href="img/favicon/favicon.ico">
 	<link rel="apple-touch-icon" sizes="180x180" href="img/favicon//apple-touch-icon.png">
 	<link rel="icon" type="image/png" sizes="32x32" href="img/favicon//favicon-32x32.png">
@@ -175,20 +175,45 @@
 										<path d="M13.2812 11.9999C13.2812 15.1364 10.7558 17.6792 7.64049 17.6792C4.52519 17.6792 2 15.1372 2 11.9999C2 8.86253 4.52538 6.32068 7.64049 6.32068C10.7556 6.32068 13.2812 8.8633 13.2812 11.9999ZM19.4691 11.9999C19.4691 14.9526 18.2063 17.346 16.6487 17.346C15.0912 17.346 13.8284 14.9518 13.8284 11.9999C13.8284 9.04793 15.0912 6.65376 16.6487 6.65376C18.2063 6.65376 19.4691 9.04793 19.4691 11.9999ZM22 11.9999C22 14.6453 21.5558 16.7897 21.008 16.7897C20.4603 16.7897 20.0161 14.6446 20.0161 11.9999C20.0161 9.35516 20.4603 7.20997 21.0082 7.20997C21.5562 7.20997 22 9.35458 22 11.9999Z" fill="black" />
 									</svg>
 								</a>
-								<button type="button" class="information__btn">Gaming</button>
+								<div class="information__dropdown">
+									<button type="button" class="information__btn">More</button>
+									<ul class="information__dropdown-list">
+										<li>
+											<button type="button" class="information__dropdown-btn">Whitepaper</button>
+										</li>
+										<li>
+											<button type="button" class="information__dropdown-btn">Pitch</button>
+										</li>
+									</ul>
+								</div>
 							</div>
 						</div>
 						<div class="information__inner">
-							<div class="information__name">
-								<div class="information__date">
-									<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-										<path fill-rule="evenodd" clip-rule="evenodd" d="M19 6H5C4.44772 6 4 6.44772 4 7V19C4 19.5523 4.44772 20 5 20H19C19.5523 20 20 19.5523 20 19V7C20 6.44771 19.5523 6 19 6ZM5 4C3.34315 4 2 5.34315 2 7V19C2 20.6569 3.34315 22 5 22H19C20.6569 22 22 20.6569 22 19V7C22 5.34315 20.6569 4 19 4H5Z" fill="#6F767E" />
-										<path fill-rule="evenodd" clip-rule="evenodd" d="M10 12C9.44772 12 9 12.4477 9 13C9 13.5523 9.44772 14 10 14H17C17.5523 14 18 13.5523 18 13C18 12.4477 17.5523 12 17 12H10ZM7 16C6.44772 16 6 16.4477 6 17C6 17.5523 6.44772 18 7 18H13C13.5523 18 14 17.5523 14 17C14 16.4477 13.5523 16 13 16H7Z" fill="#6F767E" />
-										<path fill-rule="evenodd" clip-rule="evenodd" d="M7 2C6.44772 2 6 2.44772 6 3V7C6 7.55228 6.44772 8 7 8C7.55228 8 8 7.55228 8 7V3C8 2.44772 7.55228 2 7 2ZM17 2C16.4477 2 16 2.44772 16 3V7C16 7.55228 16.4477 8 17 8C17.5523 8 18 7.55228 18 7V3C18 2.44772 17.5523 2 17 2Z" fill="#6F767E" />
+							<div class="information__converter">
+								<label for="#" class="information__converter-label">
+									<span class="information__converter-span">BNB</span>
+									<input autocomplete="off" type="number" name="form[]" data-error="Ошибка" placeholder="" class="information__converter-input">
+								</label>
+								<button type="button" class="information__converter-button">
+									<svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 28 28">
+										<path d="M28 18.5v3c0 0.266-0.234 0.5-0.5 0.5h-21.5v3c0 0.266-0.219 0.5-0.5 0.5-0.141
+										0-0.266-0.063-0.375-0.156l-4.984-5c-0.094-0.094-0.141-0.219-0.141-0.344 0-0.141 0.047-0.266
+										0.141-0.359l5-5c0.094-0.094 0.234-0.141 0.359-0.141 0.266 0 0.5 0.219 0.5 0.5v3h21.5c0.266 0 0.5 0.219 0.5
+										0.5zM28 10c0 0.125-0.047 0.266-0.141 0.359l-5 5c-0.094 0.094-0.234 0.141-0.359 0.141-0.266
+										0-0.5-0.234-0.5-0.5v-3h-21.5c-0.266 0-0.5-0.234-0.5-0.5v-3c0-0.266 0.234-0.5 0.5-0.5h21.5v-3c0-0.281 0.219-0.5
+										0.5-0.5 0.141 0 0.266 0.063 0.375 0.156l4.984 4.984c0.094 0.094 0.141 0.234 0.141 0.359z" fill="#777e90">
+										</path>
 									</svg>
-									Listing - 8 Februaly
-								</div>
-								<div class="information__price">ICO Token Price: 1 CBX =<span>0.1 USD</span></div>
+								</button>
+								<label for="#" class="information__converter-label">
+									<select name="form[]" class="form">
+										<option value="1" selected>USD</option>
+										<option value="2">BTC</option>
+										<option value="3">EUR</option>
+										<option value="4">ETH</option>
+									</select>
+									<input autocomplete="off" type="number" name="form[]" data-error="Ошибка" placeholder="" class="information__converter-input">
+								</label>
 							</div>
 							<div class="information__contract">
 								<div class="contract__name"><span>Contract: </span>ERC20</div>
@@ -623,15 +648,43 @@
 							</div>
 						</div>
 						<div class="information__grafik">
-							<div class="information__grafik-item">Grafik</div>
+							<div class="information__grafik-item item-grafik">
+								<div class="item-grafik__title">USDC Price Chart</div>
+
+							</div>
 							<div class="information__grafik-block">
-								<div class="information__grafik-text">USDC Cap:<span> $42.0M</span></div>
-								<div class="information__grafik-text">Launchpad: <span>Red Kite, GameFi</span></div>
-								<div class="information__grafik-text">Launchpad: <span>Red Kite, GameFi</span></div>
-								<div class="information__grafik-text">USDC Cap:<span> $42.0M</span></div>
-								<div class="information__grafik-text">Launchpad:<span> Red Kite, GameFi</span></div>
-								<div class="information__grafik-text">USDC Cap:<span> $42.0M</span></div>
-								<div class="information__grafik-text">Launchpad: <span>Red Kite, GameFi</span></div>
+								<div class="item-grafik__title">Token Information</div>
+								<div class="information__grafik-texts">
+									<div class="information__grafik-text">Type Coin:<span> Launchpad</span></div>
+									<div class="information__grafik-text">Rank:<span> #1000</span></div>
+								</div>
+
+								<div class="information__grafik-text">Market Cap: <span> $3 000 000 USDC</span></div>
+								<div class="information__grafik-text">Total Supply: <span>3 000 000 USDC</span></div>
+								<div class="information__grafik-text">All Time High:<span> 100 <span class="red">-40%</span></span></div>
+								<div class="information__grafik-text">All Time Low:<span> 1 <span class="green">1000%</span></span></div>
+								<div class="information__grafik-text">Listing Date:<span> 19.02.2022. 21:00 UTC</span>
+								</div>
+								<div class="information__grafik-text launchpad-items">
+									<div data-showmore class="launchpad-block">
+										<div data-showmore-content="67" class="launchpad-block__content">
+											<div class="launchpad-title">Launchpad:</div>
+											<span class="launchpad-item">Seed</span>
+											<span class="launchpad-item">Seed</span>
+											<span class="launchpad-item">Seed</span>
+											<span class="launchpad-item">Seed</span>
+											<span class="launchpad-item">Seed</span>
+											<span class="launchpad-item">Seed</span>
+											<span class="launchpad-item">Seed</span>
+											<span class="launchpad-item">Seed</span>
+											<span class="launchpad-item">Seed</span>
+											<span class="launchpad-item">Seed</span>
+											<span class="launchpad-item">Seed</span>
+											<span class="launchpad-item">Seed</span>
+										</div>
+										<button hidden data-showmore-button type="button" class="launchpad-block__more"><span>More</span><span>Hide</span></button>
+									</div>
+								</div>
 							</div>
 						</div>
 						<div class="information__diagram-title title">Allocation</div>
@@ -642,7 +695,7 @@
 								<div class="diagram-table__item">Price</div>
 								<div class="diagram-table__item">%</div>
 								<div class="diagram-table__item">Amount of token</div>
-								<div class="diagram-table__item">TGE %</div>
+								<div class="diagram-table__item">Amount of USD</div>
 								<div class="diagram-table__item">Uclock</div>
 								<div class="diagram-table__item diagram-table__circle diagram-table__circle--1">Seed
 								</div>
@@ -668,114 +721,316 @@
 							</div>
 						</div>
 						<div class="information__inform">
-							<div class="information__inform-block">
+							<div class="information__inform-titles">
 								<div class="information__inform-title title">Distribution timeline </div>
-								<div class="information__inform-inner">
-									<div class="information__inform-text">
-										<div class="information__inform-date">
-											<div class="information__inform-date-item">Date</div>
-											<div class="information__inform-date-item">03.08.2022, 16:00</div>
-											<div class="information__inform-date-item">04.08.2022, 12:00</div>
-											<div class="information__inform-date-item">04.08.2022, 09:00</div>
-										</div>
-										<div class="information__inform-alloc">
-											<div class="information__inform-alloc-item">Allocation</div>
-											<div class="information__inform-alloc-item">5 000 000 USDC</div>
-											<div class="information__inform-alloc-item">15 000 000 USDC</div>
-											<div class="information__inform-alloc-item">15 000 000 USDC</div>
-										</div>
+								<div class="information__inform-title title">Price change after unlock</div>
+							</div>
+							<div class="information__inform-body">
+								<div class="information__inform-table table-inform">
+									<div class="table-inform__item">Date</div>
+									<div class="table-inform__item">Allocation</div>
+									<div class="table-inform__item">5m</div>
+									<div class="table-inform__item">1h</div>
+									<div class="table-inform__item">5h</div>
+									<div class="table-inform__item">24h</div>
+									<div class="table-inform__item">7 days</div>
+									<div class="table-inform__item table-inform__item--circle table-inform__item--circle-blue">
+										03.08.2022, 16:00</div>
+									<div class="table-inform__item">5 000 000 USDC</div>
+									<div class="table-inform__item"></div>
+									<div class="table-inform__item"></div>
+									<div class="table-inform__item"></div>
+									<div class="table-inform__item"></div>
+									<div class="table-inform__item"></div>
+									<div class="table-inform__item table-inform__item--circle table-inform__item--circle-blue">
+										04.08.2022, 12:00
 									</div>
-									<div class="information__inform-timer">
-										<div class="information__inform-timer-text"><span>06</span>Days</div>
-										<div class="information__inform-timer-text"><span>16</span>Hours</div>
-										<div class="information__inform-timer-text"><span>53</span>Minutes</div>
-										<div class="information__inform-timer-text"><span>06</span>Seconds</div>
+									<div class="table-inform__item">15 000 000 USDC</div>
+									<div class="table-inform__item"></div>
+									<div class="table-inform__item"></div>
+									<div class="table-inform__item"></div>
+									<div class="table-inform__item"></div>
+									<div class="table-inform__item"></div>
+									<div class="table-inform__item table-inform__item--circle table-inform__item--circle-green">
+										04.08.2022, 9:00
 									</div>
-									<div class="information__inform-text">
-										<div class="information__inform-date">
-											<div class="information__inform-date-item">04.08.2022, 12:00</div>
-											<div class="information__inform-date-item">04.08.2022, 09:00</div>
+									<div class="table-inform__item">15 000 000 USDC</div>
+									<div class="table-inform__item table-inform__item--timer">
+										<div class="table-inform__item-body">
+											<div class="table-inform__item-num">06</div>
+											<div class="table-inform__item-name">Days</div>
 										</div>
-										<div class="information__inform-alloc">
-											<div class="information__inform-alloc-item">15 000 000 USDC</div>
-											<div class="information__inform-alloc-item">15 000 000 USDC</div>
+										<div class="table-inform__item-body">
+											<div class="table-inform__item-num">16</div>
+											<div class="table-inform__item-name">Hours</div>
+										</div>
+										<div class="table-inform__item-body">
+											<div class="table-inform__item-num">53</div>
+											<div class="table-inform__item-name">Minutes</div>
+										</div>
+										<div class="table-inform__item-body">
+											<div class="table-inform__item-num">06</div>
+											<div class="table-inform__item-name">Seconds</div>
 										</div>
 									</div>
 								</div>
+								<div data-showmore class="table-inform-block">
+									<div data-showmore-content="0" class="information__inform-table table-inform">
+										<div class="table-inform__item table-inform__item--circle table-inform__item--circle-green">
+											04.08.2022, 9:00
+										</div>
+										<div class="table-inform__item">15 000 000 USDC</div>
+										<div class="table-inform__item table-inform__item--timer">
+											<div class="table-inform__item-body">
+												<div class="table-inform__item-num">06</div>
+												<div class="table-inform__item-name">Days</div>
+											</div>
+											<div class="table-inform__item-body">
+												<div class="table-inform__item-num">16</div>
+												<div class="table-inform__item-name">Hours</div>
+											</div>
+											<div class="table-inform__item-body">
+												<div class="table-inform__item-num">53</div>
+												<div class="table-inform__item-name">Minutes</div>
+											</div>
+											<div class="table-inform__item-body">
+												<div class="table-inform__item-num">06</div>
+												<div class="table-inform__item-name">Seconds</div>
+											</div>
+										</div>
+										<div class="table-inform__item table-inform__item--circle table-inform__item--circle-white">
+											04.08.2022, 9:00
+										</div>
+										<div class="table-inform__item">15 000 000 USDC</div>
+										<div class="table-inform__item table-inform__item--timer">
+											<div class="table-inform__item-body">
+												<div class="table-inform__item-num">06</div>
+												<div class="table-inform__item-name">Days</div>
+											</div>
+											<div class="table-inform__item-body">
+												<div class="table-inform__item-num">16</div>
+												<div class="table-inform__item-name">Hours</div>
+											</div>
+											<div class="table-inform__item-body">
+												<div class="table-inform__item-num">53</div>
+												<div class="table-inform__item-name">Minutes</div>
+											</div>
+											<div class="table-inform__item-body">
+												<div class="table-inform__item-num">06</div>
+												<div class="table-inform__item-name">Seconds</div>
+											</div>
+										</div>
+										<div class="table-inform__item table-inform__item--circle table-inform__item--circle-white">
+											04.08.2022, 9:00
+										</div>
+										<div class="table-inform__item">15 000 000 USDC</div>
+										<div class="table-inform__item table-inform__item--timer">
+											<div class="table-inform__item-body">
+												<div class="table-inform__item-num">06</div>
+												<div class="table-inform__item-name">Days</div>
+											</div>
+											<div class="table-inform__item-body">
+												<div class="table-inform__item-num">16</div>
+												<div class="table-inform__item-name">Hours</div>
+											</div>
+											<div class="table-inform__item-body">
+												<div class="table-inform__item-num">53</div>
+												<div class="table-inform__item-name">Minutes</div>
+											</div>
+											<div class="table-inform__item-body">
+												<div class="table-inform__item-num">06</div>
+												<div class="table-inform__item-name">Seconds</div>
+											</div>
+										</div>
+										<div class="table-inform__item table-inform__item--circle table-inform__item--circle-white">
+											04.08.2022, 9:00
+										</div>
+										<div class="table-inform__item">15 000 000 USDC</div>
+										<div class="table-inform__item table-inform__item--timer">
+											<div class="table-inform__item-body">
+												<div class="table-inform__item-num">06</div>
+												<div class="table-inform__item-name">Days</div>
+											</div>
+											<div class="table-inform__item-body">
+												<div class="table-inform__item-num">16</div>
+												<div class="table-inform__item-name">Hours</div>
+											</div>
+											<div class="table-inform__item-body">
+												<div class="table-inform__item-num">53</div>
+												<div class="table-inform__item-name">Minutes</div>
+											</div>
+											<div class="table-inform__item-body">
+												<div class="table-inform__item-num">06</div>
+												<div class="table-inform__item-name">Seconds</div>
+											</div>
+										</div>
+									</div>
+									<button hidden data-showmore-button type="button" class="table-inform-block__more"><span>More</span><span>Hide</span></button>
+								</div>
 							</div>
-							<div class="information__inform-table">
-								<div class="information__inform-title title">Price change after unlock</div>
-								<div class="information__inform-table-block inform-table">
-									<div class="inform-table__item inform-table__head"></div>
-									<div class="inform-table__item inform-table__head">5m</div>
-									<div class="inform-table__item inform-table__head">1h</div>
-									<div class="inform-table__item inform-table__head">5h</div>
-									<div class="inform-table__item inform-table__head">24h</div>
-									<div class="inform-table__item inform-table__head">7 days</div>
-									<div class="inform-table__item inform-table-more">
-										<div class="inform-table-note">Seed</div>
-										<div class="inform-table-note">Public</div>
-										<div data-spollers class="spollers">
-											<div class="spollers__item">
-												<button type="button" data-spoller class="spollers__title">More
-													2 <svg width="10" height="6" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
-														<path fill-rule="evenodd" clip-rule="evenodd" d="M0.371712 0.377083C0.677224 0.0715711 1.17256 0.071571 1.47807 0.377083L6.00993 4.90894L10.5418 0.377082C10.8473 0.0715693 11.3426 0.0715692 11.6481 0.377081C11.9537 0.682594 11.9537 1.17793 11.6481 1.48344L7.11628 6.0153C6.50526 6.62632 5.51459 6.62632 4.90357 6.0153L0.371713 1.48344C0.0662002 1.17793 0.0662001 0.682596 0.371712 0.377083Z" fill="#5D5FEF" />
-													</svg></button>
-												<div class="spollers__body">
-													<div class="spollers__table-notes">
-														<div class="inform-table-note">Seed</div>
-														<div class="inform-table-note">Public</div>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-									<div class="inform-table__item"></div>
-									<div class="inform-table__item"></div>
-									<div class="inform-table__item"></div>
-									<div class="inform-table__item"></div>
-									<div class="inform-table__item"></div>
-									<div class="inform-table__item inform-table-more">
-										<div class="inform-table-note">Seed</div>
-										<div class="inform-table-note">Public</div>
-										<div data-spollers class="spollers">
-											<div class="spollers__item">
-												<button type="button" data-spoller class="spollers__title">More
-													2<svg width="10" height="6" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
-														<path fill-rule="evenodd" clip-rule="evenodd" d="M0.371712 0.377083C0.677224 0.0715711 1.17256 0.071571 1.47807 0.377083L6.00993 4.90894L10.5418 0.377082C10.8473 0.0715693 11.3426 0.0715692 11.6481 0.377081C11.9537 0.682594 11.9537 1.17793 11.6481 1.48344L7.11628 6.0153C6.50526 6.62632 5.51459 6.62632 4.90357 6.0153L0.371713 1.48344C0.0662002 1.17793 0.0662001 0.682596 0.371712 0.377083Z" fill="#5D5FEF" />
-													</svg></button>
-												<div class="spollers__body">
-													<div class="spollers__table-notes">
-														<div class="inform-table-note">Seed</div>
-														<div class="inform-table-note">Public</div>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-									<div class="inform-table__item"></div>
-									<div class="inform-table__item"></div>
-									<div class="inform-table__item"></div>
-									<div class="inform-table__item"></div>
-									<div class="inform-table__item"></div>
-									<div class="inform-table__item inform-table__item--big"></div>
-									<div class="inform-table__item inform-table__item--big"></div>
-									<div class="inform-table__item inform-table__item--big"></div>
-									<div class="inform-table__item inform-table__item--big"></div>
-									<div class="inform-table__item inform-table__item--big"></div>
-									<div class="inform-table__item inform-table__item--big"></div>
-									<div class="inform-table__item"></div>
-									<div class="inform-table__item"></div>
-									<div class="inform-table__item"></div>
-									<div class="inform-table__item"></div>
-									<div class="inform-table__item"></div>
-									<div class="inform-table__item"></div>
-									<div class="inform-table__item"></div>
-									<div class="inform-table__item"></div>
-									<div class="inform-table__item"></div>
-									<div class="inform-table__item"></div>
-									<div class="inform-table__item"></div>
-									<div class="inform-table__item"></div>
+						</div>
+						<div class="information__table">
+							<div class="information__table-title">Ethereum Markets</div>
+							<div class="information__table-body">
+								<div class="information__table-item information__table-item--head">#</div>
+								<div class="information__table-item information__table-item--head">Exchange</div>
+								<div class="information__table-item information__table-item--head">Pair</div>
+								<div class="information__table-item information__table-item--head">Price</div>
+								<div class="information__table-item information__table-item--head">Spread</div>
+								<div class="information__table-item information__table-item--head">+2 Depth</div>
+								<div class="information__table-item information__table-item--head">24h Volume</div>
+								<div class="information__table-item information__table-item--head">Trade</div>
+								<div class="information__table-item">*</div>
+								<div class="information__table-item">
+									<img src="img/eth-item.svg" alt="eth-item">
+									<a href="#" class="information__table-item-link">eToroX</a>
+									<div class="information__table-item-sponsor">Sponsored</div>
+								</div>
+								<div class="information__table-item">
+									<a href="#" class="information__table-item-link">ETH/USD</a>
+								</div>
+								<div class="information__table-item">$2,622.82</div>
+								<div class="information__table-item">0.02%</div>
+								<div class="information__table-item">$430,297</div>
+								<div class="information__table-item">$4,755,211 <span>0.04%</span> </div>
+								<div class="information__table-item">
+									<a href="#" class="information__table-item-btn">Start Trade</a>
+								</div>
+								<div class="information__table-item">*</div>
+								<div class="information__table-item">
+									<img src="img/eth-item.svg" alt="eth-item">
+									<a href="#" class="information__table-item-link">Crypto.com Exchange</a>
+									<div class="information__table-item-sponsor">Sponsored</div>
+								</div>
+								<div class="information__table-item">
+									<a href="#" class="information__table-item-link">ETH/USDT</a>
+								</div>
+								<div class="information__table-item">$2,623.09</div>
+								<div class="information__table-item">0.01%</div>
+								<div class="information__table-item">$2,011,241</div>
+								<div class="information__table-item">$487,431,410 <span>4.04%</span></div>
+								<div class="information__table-item">
+									<a href="#" class="information__table-item-btn">Start Trade</a>
+								</div>
+								<div class="information__table-item">1</div>
+								<div class="information__table-item">
+									<img src="img/eth-item.svg" alt="eth-item">
+									<a href="#" class="information__table-item-link">eToroX</a>
+								</div>
+								<div class="information__table-item">
+									<a href="#" class="information__table-item-link">ETH/USD</a>
+								</div>
+								<div class="information__table-item">$2,622.82</div>
+								<div class="information__table-item">0.02%</div>
+								<div class="information__table-item">$430,297</div>
+								<div class="information__table-item">$4,755,211 <span>0.04%</span></div>
+								<div class="information__table-item">
+									<a href="#" class="information__table-item-btn">Start Trade</a>
+								</div>
+								<div class="information__table-item">2</div>
+								<div class="information__table-item">
+									<img src="img/eth-item.svg" alt="eth-item">
+									<a href="#" class="information__table-item-link">Crypto.com Exchange</a>
+								</div>
+								<div class="information__table-item">
+									<a href="#" class="information__table-item-link">ETH/USDT</a>
+								</div>
+								<div class="information__table-item">$2,623.09</div>
+								<div class="information__table-item">0.01%</div>
+								<div class="information__table-item">$2,011,241</div>
+								<div class="information__table-item">$487,431,410 <span>0.04%</span></div>
+								<div class="information__table-item">
+									<a href="#" class="information__table-item-btn">Start Trade</a>
+								</div>
+								<div class="information__table-item">3</div>
+								<div class="information__table-item">
+									<img src="img/eth-item.svg" alt="eth-item">
+									<a href="#" class="information__table-item-link">Crypto.com Exchange</a>
+								</div>
+								<div class="information__table-item">
+									<a href="#" class="information__table-item-link">ETH/USDT</a>
+								</div>
+								<div class="information__table-item">$2,623.09</div>
+								<div class="information__table-item">0.01%</div>
+								<div class="information__table-item">$2,011,241</div>
+								<div class="information__table-item">$487,431,410 <span>0.04%</span></div>
+								<div class="information__table-item">
+									<a href="#" class="information__table-item-btn">Start Trade</a>
+								</div>
+								<div class="information__table-item">4</div>
+								<div class="information__table-item">
+									<img src="img/eth-item.svg" alt="eth-item">
+									<a href="#" class="information__table-item-link">Crypto.com Exchange</a>
+								</div>
+								<div class="information__table-item">
+									<a href="#" class="information__table-item-link">ETH/USDT</a>
+								</div>
+								<div class="information__table-item">$2,623.09</div>
+								<div class="information__table-item">0.01%</div>
+								<div class="information__table-item">$2,011,241</div>
+								<div class="information__table-item">$487,431,410 <span>0.04%</span></div>
+								<div class="information__table-item">
+									<a href="#" class="information__table-item-btn">Start Trade</a>
+								</div>
+								<div class="information__table-item">5</div>
+								<div class="information__table-item">
+									<img src="img/eth-item.svg" alt="eth-item">
+									<a href="#" class="information__table-item-link">Crypto.com Exchange</a>
+								</div>
+								<div class="information__table-item">
+									<a href="#" class="information__table-item-link">ETH/USDT</a>
+								</div>
+								<div class="information__table-item">$2,623.09</div>
+								<div class="information__table-item">0.01%</div>
+								<div class="information__table-item">$2,011,241</div>
+								<div class="information__table-item">$487,431,410 <span>0.04%</span></div>
+								<div class="information__table-item">
+									<a href="#" class="information__table-item-btn">Start Trade</a>
+								</div>
+								<div class="information__table-item">6</div>
+								<div class="information__table-item">
+									<img src="img/eth-item.svg" alt="eth-item">
+									<a href="#" class="information__table-item-link">Crypto.com Exchange</a>
+								</div>
+								<div class="information__table-item">
+									<a href="#" class="information__table-item-link">ETH/USDT</a>
+								</div>
+								<div class="information__table-item">$2,623.09</div>
+								<div class="information__table-item">0.01%</div>
+								<div class="information__table-item">$2,011,241</div>
+								<div class="information__table-item">$487,431,410 <span>0.04%</span></div>
+								<div class="information__table-item">
+									<a href="#" class="information__table-item-btn">Start Trade</a>
+								</div>
+								<div class="information__table-item">7</div>
+								<div class="information__table-item">
+									<img src="img/eth-item.svg" alt="eth-item">
+									<a href="#" class="information__table-item-link">Crypto.com Exchange</a>
+								</div>
+								<div class="information__table-item">
+									<a href="#" class="information__table-item-link">ETH/USDT</a>
+								</div>
+								<div class="information__table-item">$2,623.09</div>
+								<div class="information__table-item">0.01%</div>
+								<div class="information__table-item">$2,011,241</div>
+								<div class="information__table-item">$487,431,410 <span>0.04%</span></div>
+								<div class="information__table-item">
+									<a href="#" class="information__table-item-btn">Start Trade</a>
+								</div>
+								<div class="information__table-item">8</div>
+								<div class="information__table-item">
+									<img src="img/eth-item.svg" alt="eth-item">
+									<a href="#" class="information__table-item-link">Crypto.com Exchange</a>
+								</div>
+								<div class="information__table-item">
+									<a href="#" class="information__table-item-link">ETH/USDT</a>
+								</div>
+								<div class="information__table-item">$2,623.09</div>
+								<div class="information__table-item">0.01%</div>
+								<div class="information__table-item">$2,011,241</div>
+								<div class="information__table-item">$487,431,410 <span>0.04%</span></div>
+								<div class="information__table-item">
+									<a href="#" class="information__table-item-btn">Start Trade</a>
 								</div>
 							</div>
 						</div>
@@ -1615,7 +1870,7 @@
 		</div>
 	</div>
 </div> -->
-	<script src="js/app.min.js?_v=20220219201800"></script>
+	<script src="js/app.min.js?_v=20220220132335"></script>
 </body>
 
 </html>
