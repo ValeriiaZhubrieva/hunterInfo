@@ -5352,6 +5352,9 @@ body::after {
     margin-bottom: 3.125rem;
   }
 }
+.vesting .iris {
+  color: #5d5fef;
+}
 .vesting .table-inform__item {
   border: none;
 }
