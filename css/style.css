@@ -3617,8 +3617,13 @@ body::after {
 }
 .table-transactions-block {
   display: grid;
-  grid-template-columns: 460px 170px 170px 170px 150px;
+  grid-template-columns: 1fr 170px 170px 170px 150px;
   padding-left: 1.25rem;
+}
+@media (max-width: 61.99875em) {
+  .table-transactions-block {
+    grid-template-columns: 220px 170px 170px 170px 150px;
+  }
 }
 .table-transactions__item {
   padding: 0.625rem;
@@ -3663,9 +3668,14 @@ body::after {
   transform: rotate(-180deg);
 }
 .table-transactions .spollers__body .table-transactions-block--spollers {
-  grid-template-columns: 360px 170px 170px 170px 150px;
+  grid-template-columns: 1fr 170px 170px 170px 150px;
   align-self: end;
   margin-left: 6.25rem;
+}
+@media (max-width: 61.99875em) {
+  .table-transactions .spollers__body .table-transactions-block--spollers {
+    grid-template-columns: 120px 170px 170px 170px 150px;
+  }
 }
 .table-transactions .spollers__body .table-transactions__item--name {
   position: relative;
