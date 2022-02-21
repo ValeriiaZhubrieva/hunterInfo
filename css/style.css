@@ -2856,6 +2856,11 @@ body::after {
     right: 10px;
   }
 }
+@media (max-width: 35.625em) {
+  .portfolio__assets-tabs__navigation {
+    flex-direction: column;
+  }
+}
 .portfolio__assets-tabs__title {
   display: block;
   width: 100%;
@@ -2864,6 +2869,7 @@ body::after {
   text-align: center;
   padding: 0.75rem 0.9375rem;
   transition: all 0.3s ease 0s;
+  white-space: nowrap;
 }
 .portfolio__assets-tabs__title:not(:last-child) {
   margin-right: 0.9375rem;
@@ -3051,14 +3057,14 @@ body::after {
     padding: 1.375rem 0.625rem;
   }
 }
-@media (max-width: 21.0625em) {
+@media (max-width: 35.625em) {
   .portfolio__assets-filter__title.spollers__title {
-    top: 247px;
+    top: 277px;
   }
 }
-@media (max-width: 20.625em) {
+@media (max-width: 21.0625em) {
   .portfolio__assets-filter__title.spollers__title {
-    top: 262px;
+    top: 327px;
   }
 }
 .portfolio__assets-filter__title.spollers__title svg {
