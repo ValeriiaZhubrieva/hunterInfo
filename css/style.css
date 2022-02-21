@@ -5344,6 +5344,56 @@ body::after {
   color: #fff;
 }
 
+.vesting .ico__inner {
+  position: relative;
+}
+@media (max-width: 43.75em) {
+  .vesting .ico-tabs__navigation {
+    margin-bottom: 3.125rem;
+  }
+}
+.vesting .table-inform__item {
+  border: none;
+}
+.vesting .table-inform__item-num {
+  font-size: 0.875rem;
+  margin-bottom: 0.125rem;
+}
+.vesting .table-inform__item-body:not(:last-child) {
+  margin-right: 0.3125rem;
+}
+.vesting__filter {
+  position: absolute;
+  right: 30px;
+  top: 30px;
+}
+@media (max-width: 43.75em) {
+  .vesting__filter {
+    top: 80px;
+    right: 20px;
+  }
+}
+@media (max-width: 29.99875em) {
+  .vesting__filter {
+    right: 5px;
+  }
+}
+.vesting__filter-label {
+  color: #777e90;
+}
+@media (max-width: 29.99875em) {
+  .vesting__filter-label {
+    font-size: 0.875rem;
+  }
+}
+.vesting__filter-input {
+  width: 4.375rem;
+  color: #777e90;
+  border: 1px solid #e6e8ec;
+  border-radius: 5px;
+  background-color: transparent;
+}
+
 .wrapper.wrapper__dark {
   color: #fff;
 }
@@ -5633,6 +5683,12 @@ body::after {
 }
 .wrapper.wrapper__dark .table-transactions__item {
   border-bottom: 1px solid #33383f;
+}
+.wrapper.wrapper__dark .vesting .table-inform__item {
+  border: none;
+}
+.wrapper.wrapper__dark .vesting__filter-input {
+  border: 1px solid #33383f;
 }
 
 body.dark .popup__content {
