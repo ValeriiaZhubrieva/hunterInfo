@@ -2316,9 +2316,12 @@ body::after {
 .table__whitelist-row:first-child {
   border-top: 2px solid #5d5fef;
 }
+.table__whitelist-label {
+  white-space: nowrap;
+}
 .table__whitelist-item {
   width: 10rem;
-  padding: 1.25rem 0.625rem;
+  padding: 0.9375rem 0.3125rem;
   color: #777e90;
   text-align: center;
 }
@@ -4524,6 +4527,14 @@ body::after {
 .information__grafik-text span {
   color: #5d5fef;
 }
+.information__grafik-text .red {
+  color: #ea3333;
+  margin-left: 0.3125rem;
+}
+.information__grafik-text .green {
+  color: #00d285;
+  margin-left: 0.3125rem;
+}
 .information .launchpad-block__content {
   display: flex;
   flex-wrap: wrap;
@@ -4987,6 +4998,31 @@ body::after {
 @media (max-width: 20em) {
   .profile-launchpad__body {
     padding-left: 0.9375rem;
+  }
+}
+.profile-launchpad__title {
+  margin-bottom: 1.875rem;
+}
+@media (min-width: 73.75em) {
+  .profile-launchpad__title {
+    font-size: 1.75rem;
+  }
+}
+@media (min-width: 20em) and (max-width: 73.75em) {
+  @supports (font-size: clamp( 1.25rem , 1.0639534884rem  +  0.9302325581vw , 1.75rem )) {
+    .profile-launchpad__title {
+      font-size: clamp( 1.25rem , 1.0639534884rem  +  0.9302325581vw , 1.75rem );
+    }
+  }
+  @supports not (font-size: clamp( 1.25rem , 1.0639534884rem  +  0.9302325581vw , 1.75rem )) {
+    .profile-launchpad__title {
+      font-size: calc(1.25rem + 0.5 * (100vw - 20rem) / 53.75);
+    }
+  }
+}
+@media (max-width: 20em) {
+  .profile-launchpad__title {
+    font-size: 1.25rem;
   }
 }
 
