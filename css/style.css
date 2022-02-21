@@ -3620,7 +3620,7 @@ body::after {
   grid-template-columns: 1fr 170px 170px 170px 150px;
   padding-left: 1.25rem;
 }
-@media (max-width: 61.99875em) {
+@media (max-width: 57.8125em) {
   .table-transactions-block {
     grid-template-columns: 220px 170px 170px 170px 150px;
   }
@@ -3672,7 +3672,7 @@ body::after {
   align-self: end;
   margin-left: 6.25rem;
 }
-@media (max-width: 61.99875em) {
+@media (max-width: 57.8125em) {
   .table-transactions .spollers__body .table-transactions-block--spollers {
     grid-template-columns: 120px 170px 170px 170px 150px;
   }
