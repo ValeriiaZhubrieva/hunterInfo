@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20220221103334">
+	<link rel="stylesheet" href="css/style.min.css?_v=20220221145226">
 	<link rel="shortcut icon" href="img/favicon/favicon.ico">
 	<link rel="apple-touch-icon" sizes="180x180" href="img/favicon//apple-touch-icon.png">
 	<link rel="icon" type="image/png" sizes="32x32" href="img/favicon//favicon-32x32.png">
@@ -1872,8 +1872,10 @@
 									<nav data-tabs-titles class="portfolio__assets-tabs__navigation">
 										<button type="button" class="portfolio__assets-tabs__title _tab-active">Open
 											Position</button>
-										<button type="button" class="portfolio__assets-tabs__title">Sells
-											History</button>
+										<button type="button" class="portfolio__assets-tabs__title">Sold
+											Position</button>
+										<button type="button" class="portfolio__assets-tabs__title">Open Position + Sold
+											Position</button>
 									</nav>
 									<div class="portfolio__assets-top">
 										<div class="portfolio__assets-block">
@@ -2033,25 +2035,30 @@
 													<tbody class="assets-table__body">
 														<tr class="assets-table__body-row">
 															<td class="assets-table__body-item">
-																<span class="assets-table__body-block-img">
+																<a href="#" class="assets-table__body-block-img">
 																	<img src="img/eth-item.svg" alt="eth-item">
 																	<span class="assets-table__body-item--block">
 																		<span class="assets-table__body-item--title">ETH</span>
 																		<span class="assets-table__body-item--text">Etherium</span>
 																	</span>
-																</span>
+																</a>
 															</td>
-															<td class="assets-table__body-item">4,453.54$</td>
-															<td class="assets-table__body-item assets-table__body-item--green">
+															<td class="assets-table__body-item" data-popup="#popup-buy">
+																4,453.54$</td>
+															<td class="assets-table__body-item assets-table__body-item--green" data-popup="#popup-buy">
 																2,345.43$</td>
-															<td class="assets-table__body-item">3,422.45</td>
-															<td class="assets-table__body-item">3,453.23$</td>
-															<td class="assets-table__body-item">3,453.23$</td>
-															<td class="assets-table__body-item"><span class="assets-table__span">14.42
+															<td class="assets-table__body-item" data-popup="#popup-buy">
+																3,422.45</td>
+															<td class="assets-table__body-item" data-popup="#popup-buy">
+																3,453.23$</td>
+															<td class="assets-table__body-item" data-popup="#popup-buy">
+																3,453.23$</td>
+															<td class="assets-table__body-item" data-popup="#popup-buy">
+																<span class="assets-table__span">14.42
 																	$</span><span class="assets-table__span">55.00
 																	NFTS</span>
 															</td>
-															<td class="assets-table__body-item">
+															<td class="assets-table__body-item" data-popup="#popup-buy">
 																<span class="scale__block">
 																	<span class="scale__text">
 																		<span class="scale__item">40%</span>
@@ -2063,30 +2070,38 @@
 																	</span>
 																</span>
 															</td>
-															<td class="assets-table__body-item">04.11.2021</td>
-															<td class="assets-table__body-item"><input autocomplete="off" type="checkbox" name="form[]" data-error="Ошибка" checked class="input assets-table__body-checkbox"></td>
+															<td class="assets-table__body-item" data-popup="#popup-buy">
+																04.11.2021</td>
+															<td class="assets-table__body-item" data-popup="#popup-buy">
+																<input autocomplete="off" type="checkbox" name="form[]" data-error="Ошибка" checked class="input assets-table__body-checkbox">
+															</td>
 														</tr>
 														<tr class="assets-table__body-row">
 															<td class="assets-table__body-item">
-																<span class="assets-table__body-block-img">
+																<a href="#" class="assets-table__body-block-img">
 																	<img src="img/eth-item.svg" alt="eth-item">
 																	<span class="assets-table__body-item--block">
 																		<span class="assets-table__body-item--title">ETH</span>
 																		<span class="assets-table__body-item--text">Etherium</span>
 																	</span>
-																</span>
+																</a>
 															</td>
-															<td class="assets-table__body-item">4,453.54$</td>
-															<td class="assets-table__body-item assets-table__body-item--green">
+															<td class="assets-table__body-item" data-popup="#popup-buy">
+																4,453.54$</td>
+															<td class="assets-table__body-item assets-table__body-item--green" data-popup="#popup-buy">
 																2,345.43$</td>
-															<td class="assets-table__body-item">3,422.45</td>
-															<td class="assets-table__body-item">3,453.23$</td>
-															<td class="assets-table__body-item">3,453.23$</td>
-															<td class="assets-table__body-item"><span class="assets-table__span">14.42
+															<td class="assets-table__body-item" data-popup="#popup-buy">
+																3,422.45</td>
+															<td class="assets-table__body-item" data-popup="#popup-buy">
+																3,453.23$</td>
+															<td class="assets-table__body-item" data-popup="#popup-buy">
+																3,453.23$</td>
+															<td class="assets-table__body-item" data-popup="#popup-buy">
+																<span class="assets-table__span">14.42
 																	$</span><span class="assets-table__span">55.00
 																	NFTS</span>
 															</td>
-															<td class="assets-table__body-item">
+															<td class="assets-table__body-item" data-popup="#popup-buy">
 																<span class="scale__block">
 																	<span class="scale__text">
 																		<span class="scale__item">40%</span>
@@ -2098,30 +2113,38 @@
 																	</span>
 																</span>
 															</td>
-															<td class="assets-table__body-item">04.11.2021</td>
-															<td class="assets-table__body-item"><input autocomplete="off" type="checkbox" name="form[]" data-error="Ошибка" checked class="input assets-table__body-checkbox"></td>
+															<td class="assets-table__body-item" data-popup="#popup-buy">
+																04.11.2021</td>
+															<td class="assets-table__body-item" data-popup="#popup-buy">
+																<input autocomplete="off" type="checkbox" name="form[]" data-error="Ошибка" checked class="input assets-table__body-checkbox">
+															</td>
 														</tr>
 														<tr class="assets-table__body-row">
 															<td class="assets-table__body-item">
-																<span class="assets-table__body-block-img">
+																<a href="#" class="assets-table__body-block-img">
 																	<img src="img/eth-item.svg" alt="eth-item">
 																	<span class="assets-table__body-item--block">
 																		<span class="assets-table__body-item--title">ETH</span>
 																		<span class="assets-table__body-item--text">Etherium</span>
 																	</span>
-																</span>
+																</a>
 															</td>
-															<td class="assets-table__body-item">4,453.54$</td>
-															<td class="assets-table__body-item assets-table__body-item--green">
+															<td class="assets-table__body-item" data-popup="#popup-buy">
+																4,453.54$</td>
+															<td class="assets-table__body-item assets-table__body-item--green" data-popup="#popup-buy">
 																2,345.43$</td>
-															<td class="assets-table__body-item">3,422.45</td>
-															<td class="assets-table__body-item">3,453.23$</td>
-															<td class="assets-table__body-item">3,453.23$</td>
-															<td class="assets-table__body-item"><span class="assets-table__span">14.42
+															<td class="assets-table__body-item" data-popup="#popup-buy">
+																3,422.45</td>
+															<td class="assets-table__body-item" data-popup="#popup-buy">
+																3,453.23$</td>
+															<td class="assets-table__body-item" data-popup="#popup-buy">
+																3,453.23$</td>
+															<td class="assets-table__body-item" data-popup="#popup-buy">
+																<span class="assets-table__span">14.42
 																	$</span><span class="assets-table__span">55.00
 																	NFTS</span>
 															</td>
-															<td class="assets-table__body-item">
+															<td class="assets-table__body-item" data-popup="#popup-buy">
 																<span class="scale__block">
 																	<span class="scale__text">
 																		<span class="scale__item">40%</span>
@@ -2133,30 +2156,38 @@
 																	</span>
 																</span>
 															</td>
-															<td class="assets-table__body-item">04.11.2021</td>
-															<td class="assets-table__body-item"><input autocomplete="off" type="checkbox" name="form[]" data-error="Ошибка" checked class="input assets-table__body-checkbox"></td>
+															<td class="assets-table__body-item" data-popup="#popup-buy">
+																04.11.2021</td>
+															<td class="assets-table__body-item" data-popup="#popup-buy">
+																<input autocomplete="off" type="checkbox" name="form[]" data-error="Ошибка" checked class="input assets-table__body-checkbox">
+															</td>
 														</tr>
 														<tr class="assets-table__body-row">
 															<td class="assets-table__body-item">
-																<span class="assets-table__body-block-img">
+																<a href="#" class="assets-table__body-block-img">
 																	<img src="img/eth-item.svg" alt="eth-item">
 																	<span class="assets-table__body-item--block">
 																		<span class="assets-table__body-item--title">ETH</span>
 																		<span class="assets-table__body-item--text">Etherium</span>
 																	</span>
-																</span>
+																</a>
 															</td>
-															<td class="assets-table__body-item">4,453.54$</td>
-															<td class="assets-table__body-item assets-table__body-item--green">
+															<td class="assets-table__body-item" data-popup="#popup-buy">
+																4,453.54$</td>
+															<td class="assets-table__body-item assets-table__body-item--green" data-popup="#popup-buy">
 																2,345.43$</td>
-															<td class="assets-table__body-item">3,422.45</td>
-															<td class="assets-table__body-item">3,453.23$</td>
-															<td class="assets-table__body-item">3,453.23$</td>
-															<td class="assets-table__body-item"><span class="assets-table__span">14.42
+															<td class="assets-table__body-item" data-popup="#popup-buy">
+																3,422.45</td>
+															<td class="assets-table__body-item" data-popup="#popup-buy">
+																3,453.23$</td>
+															<td class="assets-table__body-item" data-popup="#popup-buy">
+																3,453.23$</td>
+															<td class="assets-table__body-item" data-popup="#popup-buy">
+																<span class="assets-table__span">14.42
 																	$</span><span class="assets-table__span">55.00
 																	NFTS</span>
 															</td>
-															<td class="assets-table__body-item">
+															<td class="assets-table__body-item" data-popup="#popup-buy">
 																<span class="scale__block">
 																	<span class="scale__text">
 																		<span class="scale__item">40%</span>
@@ -2168,30 +2199,38 @@
 																	</span>
 																</span>
 															</td>
-															<td class="assets-table__body-item">04.11.2021</td>
-															<td class="assets-table__body-item"><input autocomplete="off" type="checkbox" name="form[]" data-error="Ошибка" checked class="input assets-table__body-checkbox"></td>
+															<td class="assets-table__body-item" data-popup="#popup-buy">
+																04.11.2021</td>
+															<td class="assets-table__body-item" data-popup="#popup-buy">
+																<input autocomplete="off" type="checkbox" name="form[]" data-error="Ошибка" checked class="input assets-table__body-checkbox">
+															</td>
 														</tr>
 														<tr class="assets-table__body-row">
 															<td class="assets-table__body-item">
-																<span class="assets-table__body-block-img">
+																<a href="#" class="assets-table__body-block-img">
 																	<img src="img/eth-item.svg" alt="eth-item">
 																	<span class="assets-table__body-item--block">
 																		<span class="assets-table__body-item--title">ETH</span>
 																		<span class="assets-table__body-item--text">Etherium</span>
 																	</span>
-																</span>
+																</a>
 															</td>
-															<td class="assets-table__body-item">4,453.54$</td>
-															<td class="assets-table__body-item assets-table__body-item--green">
+															<td class="assets-table__body-item" data-popup="#popup-buy">
+																4,453.54$</td>
+															<td class="assets-table__body-item assets-table__body-item--green" data-popup="#popup-buy">
 																2,345.43$</td>
-															<td class="assets-table__body-item">3,422.45</td>
-															<td class="assets-table__body-item">3,453.23$</td>
-															<td class="assets-table__body-item">3,453.23$</td>
-															<td class="assets-table__body-item"><span class="assets-table__span">14.42
+															<td class="assets-table__body-item" data-popup="#popup-buy">
+																3,422.45</td>
+															<td class="assets-table__body-item" data-popup="#popup-buy">
+																3,453.23$</td>
+															<td class="assets-table__body-item" data-popup="#popup-buy">
+																3,453.23$</td>
+															<td class="assets-table__body-item" data-popup="#popup-buy">
+																<span class="assets-table__span">14.42
 																	$</span><span class="assets-table__span">55.00
 																	NFTS</span>
 															</td>
-															<td class="assets-table__body-item">
+															<td class="assets-table__body-item" data-popup="#popup-buy">
 																<span class="scale__block">
 																	<span class="scale__text">
 																		<span class="scale__item">40%</span>
@@ -2203,30 +2242,38 @@
 																	</span>
 																</span>
 															</td>
-															<td class="assets-table__body-item">04.11.2021</td>
-															<td class="assets-table__body-item"><input autocomplete="off" type="checkbox" name="form[]" data-error="Ошибка" checked class="input assets-table__body-checkbox"></td>
+															<td class="assets-table__body-item" data-popup="#popup-buy">
+																04.11.2021</td>
+															<td class="assets-table__body-item" data-popup="#popup-buy">
+																<input autocomplete="off" type="checkbox" name="form[]" data-error="Ошибка" checked class="input assets-table__body-checkbox">
+															</td>
 														</tr>
 														<tr class="assets-table__body-row">
 															<td class="assets-table__body-item">
-																<span class="assets-table__body-block-img">
+																<a href="#" class="assets-table__body-block-img">
 																	<img src="img/eth-item.svg" alt="eth-item">
 																	<span class="assets-table__body-item--block">
 																		<span class="assets-table__body-item--title">ETH</span>
 																		<span class="assets-table__body-item--text">Etherium</span>
 																	</span>
-																</span>
+																</a>
 															</td>
-															<td class="assets-table__body-item">4,453.54$</td>
-															<td class="assets-table__body-item assets-table__body-item--green">
+															<td class="assets-table__body-item" data-popup="#popup-buy">
+																4,453.54$</td>
+															<td class="assets-table__body-item assets-table__body-item--green" data-popup="#popup-buy">
 																2,345.43$</td>
-															<td class="assets-table__body-item">3,422.45</td>
-															<td class="assets-table__body-item">3,453.23$</td>
-															<td class="assets-table__body-item">3,453.23$</td>
-															<td class="assets-table__body-item"><span class="assets-table__span">14.42
+															<td class="assets-table__body-item" data-popup="#popup-buy">
+																3,422.45</td>
+															<td class="assets-table__body-item" data-popup="#popup-buy">
+																3,453.23$</td>
+															<td class="assets-table__body-item" data-popup="#popup-buy">
+																3,453.23$</td>
+															<td class="assets-table__body-item" data-popup="#popup-buy">
+																<span class="assets-table__span">14.42
 																	$</span><span class="assets-table__span">55.00
 																	NFTS</span>
 															</td>
-															<td class="assets-table__body-item">
+															<td class="assets-table__body-item" data-popup="#popup-buy">
 																<span class="scale__block">
 																	<span class="scale__text">
 																		<span class="scale__item">40%</span>
@@ -2238,30 +2285,38 @@
 																	</span>
 																</span>
 															</td>
-															<td class="assets-table__body-item">04.11.2021</td>
-															<td class="assets-table__body-item"><input autocomplete="off" type="checkbox" name="form[]" data-error="Ошибка" checked class="input assets-table__body-checkbox"></td>
+															<td class="assets-table__body-item" data-popup="#popup-buy">
+																04.11.2021</td>
+															<td class="assets-table__body-item" data-popup="#popup-buy">
+																<input autocomplete="off" type="checkbox" name="form[]" data-error="Ошибка" checked class="input assets-table__body-checkbox">
+															</td>
 														</tr>
 														<tr class="assets-table__body-row">
 															<td class="assets-table__body-item">
-																<span class="assets-table__body-block-img">
+																<a href="#" class="assets-table__body-block-img">
 																	<img src="img/eth-item.svg" alt="eth-item">
 																	<span class="assets-table__body-item--block">
 																		<span class="assets-table__body-item--title">ETH</span>
 																		<span class="assets-table__body-item--text">Etherium</span>
 																	</span>
-																</span>
+																</a>
 															</td>
-															<td class="assets-table__body-item">4,453.54$</td>
-															<td class="assets-table__body-item assets-table__body-item--green">
+															<td class="assets-table__body-item" data-popup="#popup-buy">
+																4,453.54$</td>
+															<td class="assets-table__body-item assets-table__body-item--green" data-popup="#popup-buy">
 																2,345.43$</td>
-															<td class="assets-table__body-item">3,422.45</td>
-															<td class="assets-table__body-item">3,453.23$</td>
-															<td class="assets-table__body-item">3,453.23$</td>
-															<td class="assets-table__body-item"><span class="assets-table__span">14.42
+															<td class="assets-table__body-item" data-popup="#popup-buy">
+																3,422.45</td>
+															<td class="assets-table__body-item" data-popup="#popup-buy">
+																3,453.23$</td>
+															<td class="assets-table__body-item" data-popup="#popup-buy">
+																3,453.23$</td>
+															<td class="assets-table__body-item" data-popup="#popup-buy">
+																<span class="assets-table__span">14.42
 																	$</span><span class="assets-table__span">55.00
 																	NFTS</span>
 															</td>
-															<td class="assets-table__body-item">
+															<td class="assets-table__body-item" data-popup="#popup-buy">
 																<span class="scale__block">
 																	<span class="scale__text">
 																		<span class="scale__item">40%</span>
@@ -2273,30 +2328,38 @@
 																	</span>
 																</span>
 															</td>
-															<td class="assets-table__body-item">04.11.2021</td>
-															<td class="assets-table__body-item"><input autocomplete="off" type="checkbox" name="form[]" data-error="Ошибка" checked class="input assets-table__body-checkbox"></td>
+															<td class="assets-table__body-item" data-popup="#popup-buy">
+																04.11.2021</td>
+															<td class="assets-table__body-item" data-popup="#popup-buy">
+																<input autocomplete="off" type="checkbox" name="form[]" data-error="Ошибка" checked class="input assets-table__body-checkbox">
+															</td>
 														</tr>
 														<tr class="assets-table__body-row">
 															<td class="assets-table__body-item">
-																<span class="assets-table__body-block-img">
+																<a href="#" class="assets-table__body-block-img">
 																	<img src="img/eth-item.svg" alt="eth-item">
 																	<span class="assets-table__body-item--block">
 																		<span class="assets-table__body-item--title">ETH</span>
 																		<span class="assets-table__body-item--text">Etherium</span>
 																	</span>
-																</span>
+																</a>
 															</td>
-															<td class="assets-table__body-item">4,453.54$</td>
-															<td class="assets-table__body-item assets-table__body-item--green">
+															<td class="assets-table__body-item" data-popup="#popup-buy">
+																4,453.54$</td>
+															<td class="assets-table__body-item assets-table__body-item--green" data-popup="#popup-buy">
 																2,345.43$</td>
-															<td class="assets-table__body-item">3,422.45</td>
-															<td class="assets-table__body-item">3,453.23$</td>
-															<td class="assets-table__body-item">3,453.23$</td>
-															<td class="assets-table__body-item"><span class="assets-table__span">14.42
+															<td class="assets-table__body-item" data-popup="#popup-buy">
+																3,422.45</td>
+															<td class="assets-table__body-item" data-popup="#popup-buy">
+																3,453.23$</td>
+															<td class="assets-table__body-item" data-popup="#popup-buy">
+																3,453.23$</td>
+															<td class="assets-table__body-item" data-popup="#popup-buy">
+																<span class="assets-table__span">14.42
 																	$</span><span class="assets-table__span">55.00
 																	NFTS</span>
 															</td>
-															<td class="assets-table__body-item">
+															<td class="assets-table__body-item" data-popup="#popup-buy">
 																<span class="scale__block">
 																	<span class="scale__text">
 																		<span class="scale__item">40%</span>
@@ -2308,30 +2371,38 @@
 																	</span>
 																</span>
 															</td>
-															<td class="assets-table__body-item">04.11.2021</td>
-															<td class="assets-table__body-item"><input autocomplete="off" type="checkbox" name="form[]" data-error="Ошибка" checked class="input assets-table__body-checkbox"></td>
+															<td class="assets-table__body-item" data-popup="#popup-buy">
+																04.11.2021</td>
+															<td class="assets-table__body-item" data-popup="#popup-buy">
+																<input autocomplete="off" type="checkbox" name="form[]" data-error="Ошибка" checked class="input assets-table__body-checkbox">
+															</td>
 														</tr>
 														<tr class="assets-table__body-row">
 															<td class="assets-table__body-item">
-																<span class="assets-table__body-block-img">
+																<a href="#" class="assets-table__body-block-img">
 																	<img src="img/eth-item.svg" alt="eth-item">
 																	<span class="assets-table__body-item--block">
 																		<span class="assets-table__body-item--title">ETH</span>
 																		<span class="assets-table__body-item--text">Etherium</span>
 																	</span>
-																</span>
+																</a>
 															</td>
-															<td class="assets-table__body-item">4,453.54$</td>
-															<td class="assets-table__body-item assets-table__body-item--green">
+															<td class="assets-table__body-item" data-popup="#popup-buy">
+																4,453.54$</td>
+															<td class="assets-table__body-item assets-table__body-item--green" data-popup="#popup-buy">
 																2,345.43$</td>
-															<td class="assets-table__body-item">3,422.45</td>
-															<td class="assets-table__body-item">3,453.23$</td>
-															<td class="assets-table__body-item">3,453.23$</td>
-															<td class="assets-table__body-item"><span class="assets-table__span">14.42
+															<td class="assets-table__body-item" data-popup="#popup-buy">
+																3,422.45</td>
+															<td class="assets-table__body-item" data-popup="#popup-buy">
+																3,453.23$</td>
+															<td class="assets-table__body-item" data-popup="#popup-buy">
+																3,453.23$</td>
+															<td class="assets-table__body-item" data-popup="#popup-buy">
+																<span class="assets-table__span">14.42
 																	$</span><span class="assets-table__span">55.00
 																	NFTS</span>
 															</td>
-															<td class="assets-table__body-item">
+															<td class="assets-table__body-item" data-popup="#popup-buy">
 																<span class="scale__block">
 																	<span class="scale__text">
 																		<span class="scale__item">40%</span>
@@ -2343,8 +2414,11 @@
 																	</span>
 																</span>
 															</td>
-															<td class="assets-table__body-item">04.11.2021</td>
-															<td class="assets-table__body-item"><input autocomplete="off" type="checkbox" name="form[]" data-error="Ошибка" checked class="input assets-table__body-checkbox"></td>
+															<td class="assets-table__body-item" data-popup="#popup-buy">
+																04.11.2021</td>
+															<td class="assets-table__body-item" data-popup="#popup-buy">
+																<input autocomplete="off" type="checkbox" name="form[]" data-error="Ошибка" checked class="input assets-table__body-checkbox">
+															</td>
 														</tr>
 													</tbody>
 												</table>
@@ -2364,167 +2438,658 @@
 													<tbody class="history-table__body">
 														<tr class="history-table__body-row">
 															<td class="history-table__body-item">
-																<span class="assets-table__body-block-img">
+																<a href="#" class="assets-table__body-block-img">
 																	<img src="img/eth-item.svg" alt="eth-item">
 																	<span class="assets-table__body-item--block">
 																		<span class="assets-table__body-item--title">ETH</span>
 																		<span class="assets-table__body-item--text">Etherium</span>
 																	</span>
-																</span>
+																</a>
 															</td>
-															<td class="history-table__body-item">4,453.54$</td>
-															<td class="history-table__body-item">3,124.54$</td>
-															<td class="history-table__body-item">ETH</td>
-															<td class="history-table__body-item">143.54$</td>
-															<td class="history-table__body-item history-table__body-item--green">
+															<td class="history-table__body-item" data-popup="#popup-buy">4,453.54$</td>
+															<td class="history-table__body-item" data-popup="#popup-buy">3,124.54$</td>
+															<td class="history-table__body-item" data-popup="#popup-buy">ETH</td>
+															<td class="history-table__body-item" data-popup="#popup-buy">143.54$</td>
+															<td class="history-table__body-item history-table__body-item--green" data-popup="#popup-buy">
 																15%</td>
 														</tr>
 														<tr class="history-table__body-row">
 															<td class="history-table__body-item">
-																<span class="assets-table__body-block-img">
+																<a href="#" class="assets-table__body-block-img">
 																	<img src="img/eth-item.svg" alt="eth-item">
 																	<span class="assets-table__body-item--block">
 																		<span class="assets-table__body-item--title">ETH</span>
 																		<span class="assets-table__body-item--text">Etherium</span>
 																	</span>
-																</span>
+																</a>
 															</td>
-															<td class="history-table__body-item">4,453.54$</td>
-															<td class="history-table__body-item">3,124.54$</td>
-															<td class="history-table__body-item">ETH</td>
-															<td class="history-table__body-item">143.54$</td>
-															<td class="history-table__body-item history-table__body-item--green">
+															<td class="history-table__body-item" data-popup="#popup-buy">4,453.54$</td>
+															<td class="history-table__body-item" data-popup="#popup-buy">3,124.54$</td>
+															<td class="history-table__body-item" data-popup="#popup-buy">ETH</td>
+															<td class="history-table__body-item" data-popup="#popup-buy">143.54$</td>
+															<td class="history-table__body-item history-table__body-item--green" data-popup="#popup-buy">
 																15%</td>
 														</tr>
 														<tr class="history-table__body-row">
 															<td class="history-table__body-item">
-																<span class="assets-table__body-block-img">
+																<a href="#" class="assets-table__body-block-img">
 																	<img src="img/eth-item.svg" alt="eth-item">
 																	<span class="assets-table__body-item--block">
 																		<span class="assets-table__body-item--title">ETH</span>
 																		<span class="assets-table__body-item--text">Etherium</span>
 																	</span>
-																</span>
+																</a>
 															</td>
-															<td class="history-table__body-item">4,453.54$</td>
-															<td class="history-table__body-item">3,124.54$</td>
-															<td class="history-table__body-item">ETH</td>
-															<td class="history-table__body-item">143.54$</td>
-															<td class="history-table__body-item history-table__body-item--green">
+															<td class="history-table__body-item" data-popup="#popup-buy">4,453.54$</td>
+															<td class="history-table__body-item" data-popup="#popup-buy">3,124.54$</td>
+															<td class="history-table__body-item" data-popup="#popup-buy">ETH</td>
+															<td class="history-table__body-item" data-popup="#popup-buy">143.54$</td>
+															<td class="history-table__body-item history-table__body-item--green" data-popup="#popup-buy">
 																15%</td>
 														</tr>
 														<tr class="history-table__body-row">
 															<td class="history-table__body-item">
-																<span class="assets-table__body-block-img">
+																<a href="#" class="assets-table__body-block-img">
 																	<img src="img/eth-item.svg" alt="eth-item">
 																	<span class="assets-table__body-item--block">
 																		<span class="assets-table__body-item--title">ETH</span>
 																		<span class="assets-table__body-item--text">Etherium</span>
 																	</span>
-																</span>
+																</a>
 															</td>
-															<td class="history-table__body-item">4,453.54$</td>
-															<td class="history-table__body-item">3,124.54$</td>
-															<td class="history-table__body-item">ETH</td>
-															<td class="history-table__body-item">143.54$</td>
-															<td class="history-table__body-item history-table__body-item--green">
+															<td class="history-table__body-item" data-popup="#popup-buy">4,453.54$</td>
+															<td class="history-table__body-item" data-popup="#popup-buy">3,124.54$</td>
+															<td class="history-table__body-item" data-popup="#popup-buy">ETH</td>
+															<td class="history-table__body-item" data-popup="#popup-buy">143.54$</td>
+															<td class="history-table__body-item history-table__body-item--green" data-popup="#popup-buy">
 																15%</td>
 														</tr>
 														<tr class="history-table__body-row">
 															<td class="history-table__body-item">
-																<span class="assets-table__body-block-img">
+																<a href="#" class="assets-table__body-block-img">
 																	<img src="img/eth-item.svg" alt="eth-item">
 																	<span class="assets-table__body-item--block">
 																		<span class="assets-table__body-item--title">ETH</span>
 																		<span class="assets-table__body-item--text">Etherium</span>
 																	</span>
-																</span>
+																</a>
 															</td>
-															<td class="history-table__body-item">4,453.54$</td>
-															<td class="history-table__body-item">3,124.54$</td>
-															<td class="history-table__body-item">ETH</td>
-															<td class="history-table__body-item">143.54$</td>
-															<td class="history-table__body-item history-table__body-item--green">
+															<td class="history-table__body-item" data-popup="#popup-buy">4,453.54$</td>
+															<td class="history-table__body-item" data-popup="#popup-buy">3,124.54$</td>
+															<td class="history-table__body-item" data-popup="#popup-buy">ETH</td>
+															<td class="history-table__body-item" data-popup="#popup-buy">143.54$</td>
+															<td class="history-table__body-item history-table__body-item--green" data-popup="#popup-buy">
 																15%</td>
 														</tr>
 														<tr class="history-table__body-row">
 															<td class="history-table__body-item">
-																<span class="assets-table__body-block-img">
+																<a href="#" class="assets-table__body-block-img">
 																	<img src="img/eth-item.svg" alt="eth-item">
 																	<span class="assets-table__body-item--block">
 																		<span class="assets-table__body-item--title">ETH</span>
 																		<span class="assets-table__body-item--text">Etherium</span>
 																	</span>
-																</span>
+																</a>
 															</td>
-															<td class="history-table__body-item">4,453.54$</td>
-															<td class="history-table__body-item">3,124.54$</td>
-															<td class="history-table__body-item">ETH</td>
-															<td class="history-table__body-item">143.54$</td>
-															<td class="history-table__body-item history-table__body-item--green">
+															<td class="history-table__body-item" data-popup="#popup-buy">4,453.54$</td>
+															<td class="history-table__body-item" data-popup="#popup-buy">3,124.54$</td>
+															<td class="history-table__body-item" data-popup="#popup-buy">ETH</td>
+															<td class="history-table__body-item" data-popup="#popup-buy">143.54$</td>
+															<td class="history-table__body-item history-table__body-item--green" data-popup="#popup-buy">
 																15%</td>
 														</tr>
 														<tr class="history-table__body-row">
 															<td class="history-table__body-item">
-																<span class="assets-table__body-block-img">
+																<a href="#" class="assets-table__body-block-img">
 																	<img src="img/eth-item.svg" alt="eth-item">
 																	<span class="assets-table__body-item--block">
 																		<span class="assets-table__body-item--title">ETH</span>
 																		<span class="assets-table__body-item--text">Etherium</span>
 																	</span>
-																</span>
+																</a>
 															</td>
-															<td class="history-table__body-item">4,453.54$</td>
-															<td class="history-table__body-item">3,124.54$</td>
-															<td class="history-table__body-item">ETH</td>
-															<td class="history-table__body-item">143.54$</td>
-															<td class="history-table__body-item history-table__body-item--green">
+															<td class="history-table__body-item" data-popup="#popup-buy">4,453.54$</td>
+															<td class="history-table__body-item" data-popup="#popup-buy">3,124.54$</td>
+															<td class="history-table__body-item" data-popup="#popup-buy">ETH</td>
+															<td class="history-table__body-item" data-popup="#popup-buy">143.54$</td>
+															<td class="history-table__body-item history-table__body-item--green" data-popup="#popup-buy">
 																15%</td>
 														</tr>
 														<tr class="history-table__body-row">
 															<td class="history-table__body-item">
-																<span class="assets-table__body-block-img">
+																<a href="#" class="assets-table__body-block-img">
 																	<img src="img/eth-item.svg" alt="eth-item">
 																	<span class="assets-table__body-item--block">
 																		<span class="assets-table__body-item--title">ETH</span>
 																		<span class="assets-table__body-item--text">Etherium</span>
 																	</span>
-																</span>
+																</a>
 															</td>
-															<td class="history-table__body-item">4,453.54$</td>
-															<td class="history-table__body-item">3,124.54$</td>
-															<td class="history-table__body-item">ETH</td>
-															<td class="history-table__body-item">143.54$</td>
-															<td class="history-table__body-item history-table__body-item--green">
+															<td class="history-table__body-item" data-popup="#popup-buy">4,453.54$</td>
+															<td class="history-table__body-item" data-popup="#popup-buy">3,124.54$</td>
+															<td class="history-table__body-item" data-popup="#popup-buy">ETH</td>
+															<td class="history-table__body-item" data-popup="#popup-buy">143.54$</td>
+															<td class="history-table__body-item history-table__body-item--green" data-popup="#popup-buy">
 																15%</td>
 														</tr>
 														<tr class="history-table__body-row">
 															<td class="history-table__body-item">
-																<span class="assets-table__body-block-img">
+																<a href="#" class="assets-table__body-block-img">
 																	<img src="img/eth-item.svg" alt="eth-item">
 																	<span class="assets-table__body-item--block">
 																		<span class="assets-table__body-item--title">ETH</span>
 																		<span class="assets-table__body-item--text">Etherium</span>
 																	</span>
-																</span>
+																</a>
 															</td>
-															<td class="history-table__body-item">4,453.54$</td>
-															<td class="history-table__body-item">3,124.54$</td>
-															<td class="history-table__body-item">ETH</td>
-															<td class="history-table__body-item">143.54$</td>
-															<td class="history-table__body-item history-table__body-item--green">
+															<td class="history-table__body-item" data-popup="#popup-buy">4,453.54$</td>
+															<td class="history-table__body-item" data-popup="#popup-buy">3,124.54$</td>
+															<td class="history-table__body-item" data-popup="#popup-buy">ETH</td>
+															<td class="history-table__body-item" data-popup="#popup-buy">143.54$</td>
+															<td class="history-table__body-item history-table__body-item--green" data-popup="#popup-buy">
 																15%</td>
 														</tr>
 													</tbody>
 												</table>
 											</div>
 										</div>
+										<div class="portfolio__assets-tabs__body">
+											<div class="open-sold__table">
+												<table class="open-sold__table-block">
+													<thead class="open-sold__table-head">
+														<th class="open-sold__table-head-item">Name</th>
+														<th class="open-sold__table-head-item">Price Now</th>
+														<th class="open-sold__table-head-item">Buy Price</th>
+														<th class="open-sold__table-head-item">Sell Price</th>
+														<th class="open-sold__table-head-item">Sold Profit</th>
+														<th class="open-sold__table-head-item">Holdings</th>
+														<th class="open-sold__table-head-item">Total</th>
+													</thead>
+													<tbody class="open-sold__table-body">
+														<tr class="open-sold__table-body__row">
+															<td class="open-sold__table-body__item">
+																<a href="#" class="assets-table__body-block-img">
+																	<img src="img/eth-item.svg" alt="eth-item">
+																	<span class="assets-table__body-item--block">
+																		<span class="assets-table__body-item--title">ETH</span>
+																		<span class="assets-table__body-item--text">Etherium</span>
+																	</span>
+																</a>
+															</td>
+															<td class="open-sold__table-body__item">$4327.9</td>
+															<td class="open-sold__table-body__item">$4327.9</td>
+															<td class="open-sold__table-body__item">
+																<span class="assets-table__span">14.42
+																	$</span><span class="assets-table__span">12%</span>
+															</td>
+															<td class="open-sold__table-body__item">$4327.9</td>
+															<td class="open-sold__table-body__item">
+																<span class="assets-table__span">14.42
+																	$</span><span class="assets-table__span">55.00
+																	NFTS</span>
+															</td>
+															<td class="open-sold__table-body__item">$4327.9</td>
+														</tr>
+														<tr class="open-sold__table-body__row">
+															<td class="open-sold__table-body__item">
+																<a href="#" class="assets-table__body-block-img">
+																	<img src="img/eth-item.svg" alt="eth-item">
+																	<span class="assets-table__body-item--block">
+																		<span class="assets-table__body-item--title">ETH</span>
+																		<span class="assets-table__body-item--text">Etherium</span>
+																	</span>
+																</a>
+															</td>
+															<td class="open-sold__table-body__item">$4327.9</td>
+															<td class="open-sold__table-body__item">$4327.9</td>
+															<td class="open-sold__table-body__item">
+																<span class="assets-table__span">14.42
+																	$</span><span class="assets-table__span">12%</span>
+															</td>
+															<td class="open-sold__table-body__item">$4327.9</td>
+															<td class="open-sold__table-body__item">
+																<span class="assets-table__span">14.42
+																	$</span><span class="assets-table__span">55.00
+																	NFTS</span>
+															</td>
+															<td class="open-sold__table-body__item">$4327.9</td>
+														</tr>
+														<tr class="open-sold__table-body__row">
+															<td class="open-sold__table-body__item">
+																<a href="#" class="assets-table__body-block-img">
+																	<img src="img/eth-item.svg" alt="eth-item">
+																	<span class="assets-table__body-item--block">
+																		<span class="assets-table__body-item--title">ETH</span>
+																		<span class="assets-table__body-item--text">Etherium</span>
+																	</span>
+																</a>
+															</td>
+															<td class="open-sold__table-body__item">$4327.9</td>
+															<td class="open-sold__table-body__item">$4327.9</td>
+															<td class="open-sold__table-body__item">
+																<span class="assets-table__span">14.42
+																	$</span><span class="assets-table__span">12%</span>
+															</td>
+															<td class="open-sold__table-body__item">$4327.9</td>
+															<td class="open-sold__table-body__item">
+																<span class="assets-table__span">14.42
+																	$</span><span class="assets-table__span">55.00
+																	NFTS</span>
+															</td>
+															<td class="open-sold__table-body__item">$4327.9</td>
+														</tr>
+														<tr class="open-sold__table-body__row">
+															<td class="open-sold__table-body__item">
+																<a href="#" class="assets-table__body-block-img">
+																	<img src="img/eth-item.svg" alt="eth-item">
+																	<span class="assets-table__body-item--block">
+																		<span class="assets-table__body-item--title">ETH</span>
+																		<span class="assets-table__body-item--text">Etherium</span>
+																	</span>
+																</a>
+															</td>
+															<td class="open-sold__table-body__item">$4327.9</td>
+															<td class="open-sold__table-body__item">$4327.9</td>
+															<td class="open-sold__table-body__item">
+																<span class="assets-table__span">14.42
+																	$</span><span class="assets-table__span">12%</span>
+															</td>
+															<td class="open-sold__table-body__item">$4327.9</td>
+															<td class="open-sold__table-body__item">
+																<span class="assets-table__span">14.42
+																	$</span><span class="assets-table__span">55.00
+																	NFTS</span>
+															</td>
+															<td class="open-sold__table-body__item">$4327.9</td>
+														</tr>
+														<tr class="open-sold__table-body__row">
+															<td class="open-sold__table-body__item">
+																<a href="#" class="assets-table__body-block-img">
+																	<img src="img/eth-item.svg" alt="eth-item">
+																	<span class="assets-table__body-item--block">
+																		<span class="assets-table__body-item--title">ETH</span>
+																		<span class="assets-table__body-item--text">Etherium</span>
+																	</span>
+																</a>
+															</td>
+															<td class="open-sold__table-body__item">$4327.9</td>
+															<td class="open-sold__table-body__item">$4327.9</td>
+															<td class="open-sold__table-body__item">
+																<span class="assets-table__span">14.42
+																	$</span><span class="assets-table__span">12%</span>
+															</td>
+															<td class="open-sold__table-body__item">$4327.9</td>
+															<td class="open-sold__table-body__item">
+																<span class="assets-table__span">14.42
+																	$</span><span class="assets-table__span">55.00
+																	NFTS</span>
+															</td>
+															<td class="open-sold__table-body__item">$4327.9</td>
+														</tr>
+														<tr class="open-sold__table-body__row">
+															<td class="open-sold__table-body__item">
+																<a href="#" class="assets-table__body-block-img">
+																	<img src="img/eth-item.svg" alt="eth-item">
+																	<span class="assets-table__body-item--block">
+																		<span class="assets-table__body-item--title">ETH</span>
+																		<span class="assets-table__body-item--text">Etherium</span>
+																	</span>
+																</a>
+															</td>
+															<td class="open-sold__table-body__item">$4327.9</td>
+															<td class="open-sold__table-body__item">$4327.9</td>
+															<td class="open-sold__table-body__item">
+																<span class="assets-table__span">14.42
+																	$</span><span class="assets-table__span">12%</span>
+															</td>
+															<td class="open-sold__table-body__item">$4327.9</td>
+															<td class="open-sold__table-body__item">
+																<span class="assets-table__span">14.42
+																	$</span><span class="assets-table__span">55.00
+																	NFTS</span>
+															</td>
+															<td class="open-sold__table-body__item">$4327.9</td>
+														</tr>
+														<tr class="open-sold__table-body__row">
+															<td class="open-sold__table-body__item">
+																<a href="#" class="assets-table__body-block-img">
+																	<img src="img/eth-item.svg" alt="eth-item">
+																	<span class="assets-table__body-item--block">
+																		<span class="assets-table__body-item--title">ETH</span>
+																		<span class="assets-table__body-item--text">Etherium</span>
+																	</span>
+																</a>
+															</td>
+															<td class="open-sold__table-body__item">$4327.9</td>
+															<td class="open-sold__table-body__item">$4327.9</td>
+															<td class="open-sold__table-body__item">
+																<span class="assets-table__span">14.42
+																	$</span><span class="assets-table__span">12%</span>
+															</td>
+															<td class="open-sold__table-body__item">$4327.9</td>
+															<td class="open-sold__table-body__item">
+																<span class="assets-table__span">14.42
+																	$</span><span class="assets-table__span">55.00
+																	NFTS</span>
+															</td>
+															<td class="open-sold__table-body__item">$4327.9</td>
+														</tr>
+														<tr class="open-sold__table-body__row">
+															<td class="open-sold__table-body__item">
+																<a href="#" class="assets-table__body-block-img">
+																	<img src="img/eth-item.svg" alt="eth-item">
+																	<span class="assets-table__body-item--block">
+																		<span class="assets-table__body-item--title">ETH</span>
+																		<span class="assets-table__body-item--text">Etherium</span>
+																	</span>
+																</a>
+															</td>
+															<td class="open-sold__table-body__item">$4327.9</td>
+															<td class="open-sold__table-body__item">$4327.9</td>
+															<td class="open-sold__table-body__item">
+																<span class="assets-table__span">14.42
+																	$</span><span class="assets-table__span">12%</span>
+															</td>
+															<td class="open-sold__table-body__item">$4327.9</td>
+															<td class="open-sold__table-body__item">
+																<span class="assets-table__span">14.42
+																	$</span><span class="assets-table__span">55.00
+																	NFTS</span>
+															</td>
+															<td class="open-sold__table-body__item">$4327.9</td>
+														</tr>
+													</tbody>
+												</table>
+											</div>
+										</div>
+									</div>
+
+								</div>
+							</div>
+							<div class="portfolio__resent-transactions">
+								<h3 class="portfolio__assets-title">Recent Transactions</h3>
+								<div class="portfolio__resent-transactions-table table-transactions">
+									<div class="table-transactions-block">
+										<div class="table-transactions__item table-transactions__head-item">Type
+										</div>
+										<div class="table-transactions__item table-transactions__head-item">Quantity
+										</div>
+										<div class="table-transactions__item table-transactions__head-item">Price
+										</div>
+										<div class="table-transactions__item table-transactions__head-item">Total
+										</div>
+										<div class="table-transactions__item table-transactions__head-item">Date and
+											Time
+										</div>
+										<div class="table-transactions__item table-transactions__item--name">
+											<a href="#" class="assets-table__body-block-img">
+												<img src="img/eth-item.svg" alt="eth-item">
+												<span class="assets-table__body-item--block">
+													<span class="assets-table__body-item--title">Buy ETH</span>
+													<span class="assets-table__body-item--text">Etherium</span>
+												</span>
+											</a>
+										</div>
+										<div class="table-transactions__item green">
+											+115,797.00 ETH</div>
+										<div class="table-transactions__item">$0.0017272</div>
+										<div class="table-transactions__item">$990.00</div>
+										<div class="table-transactions__item table-transactions__item--span">
+											<span class="assets-table__span">26 Oct, 2021
+											</span><span class="assets-table__span">18:57</span>
+										</div>
+										<div class="table-transactions__item table-transactions__item--name">
+											<a href="#" class="assets-table__body-block-img">
+												<img src="img/eth-item.svg" alt="eth-item">
+												<span class="assets-table__body-item--block">
+													<span class="assets-table__body-item--title">Buy ETH</span>
+													<span class="assets-table__body-item--text">Etherium</span>
+												</span>
+											</a>
+										</div>
+										<div class="table-transactions__item green">
+											+115,797.00 ETH</div>
+										<div class="table-transactions__item">$0.0017272</div>
+										<div class="table-transactions__item">$990.00</div>
+										<div class="table-transactions__item table-transactions__item--span">
+											<span class="assets-table__span">26 Oct, 2021
+											</span><span class="assets-table__span">18:57</span>
+										</div>
+									</div>
+									<div class="table-transactions-spollers">
+										<div data-spollers class="spollers">
+											<div class="spollers__item">
+												<button type="button" data-spoller class="spollers__title">
+													<svg viewBox="0 0 8 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<path fill-rule="evenodd" clip-rule="evenodd" d="M7.50592 1.16074C7.18049 0.835307 6.65285 0.835307 6.32741 1.16074L4 3.48815L1.67259 1.16074C1.34715 0.835307 0.819515 0.835307 0.494078 1.16074C0.168641 1.48618 0.168641 2.01382 0.494078 2.33926L3.41074 5.25592C3.73618 5.58136 4.26382 5.58136 4.58926 5.25592L7.50592 2.33926C7.83136 2.01382 7.83136 1.48618 7.50592 1.16074Z" fill="#777E91" />
+													</svg>
+												</button>
+												<div class="spollers__body">
+													<div class="table-transactions-block table-transactions-block--spollers">
+														<div class="table-transactions__item table-transactions__item--name">
+															<a href="#" class="assets-table__body-block-img">
+																<img src="img/eth-item.svg" alt="eth-item">
+																<span class="assets-table__body-item--block">
+																	<span class="assets-table__body-item--title">Buy
+																		ETH</span>
+																	<span class="assets-table__body-item--text">Etherium</span>
+																</span>
+															</a>
+														</div>
+														<div class="table-transactions__item green">
+															+115,797.00 ETH</div>
+														<div class="table-transactions__item">$0.0017272</div>
+														<div class="table-transactions__item">$990.00</div>
+														<div class="table-transactions__item table-transactions__item--span">
+															<span class="assets-table__span">26 Oct, 2021
+															</span><span class="assets-table__span">18:57</span>
+														</div>
+														<div class="table-transactions__item table-transactions__item--name">
+															<a href="#" class="assets-table__body-block-img">
+																<img src="img/eth-item.svg" alt="eth-item">
+																<span class="assets-table__body-item--block">
+																	<span class="assets-table__body-item--title">Buy
+																		ETH</span>
+																	<span class="assets-table__body-item--text">Etherium</span>
+																</span>
+															</a>
+														</div>
+														<div class="table-transactions__item green">
+															+115,797.00 ETH</div>
+														<div class="table-transactions__item">$0.0017272</div>
+														<div class="table-transactions__item">$990.00</div>
+														<div class="table-transactions__item table-transactions__item--span">
+															<span class="assets-table__span">26 Oct, 2021
+															</span><span class="assets-table__span">18:57</span>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="table-transactions-block">
+										<div class="table-transactions__item table-transactions__item--name">
+											<a href="#" class="assets-table__body-block-img">
+												<img src="img/eth-item.svg" alt="eth-item">
+												<span class="assets-table__body-item--block">
+													<span class="assets-table__body-item--title">Buy ETH</span>
+													<span class="assets-table__body-item--text">Etherium</span>
+												</span>
+											</a>
+										</div>
+										<div class="table-transactions__item green">
+											+115,797.00 ETH</div>
+										<div class="table-transactions__item">$0.0017272</div>
+										<div class="table-transactions__item">$990.00</div>
+										<div class="table-transactions__item table-transactions__item--span">
+											<span class="assets-table__span">26 Oct, 2021
+											</span><span class="assets-table__span">18:57</span>
+										</div>
+										<div class="table-transactions__item table-transactions__item--name">
+											<a href="#" class="assets-table__body-block-img">
+												<img src="img/eth-item.svg" alt="eth-item">
+												<span class="assets-table__body-item--block">
+													<span class="assets-table__body-item--title">Buy ETH</span>
+													<span class="assets-table__body-item--text">Etherium</span>
+												</span>
+											</a>
+										</div>
+										<div class="table-transactions__item green">
+											+115,797.00 ETH</div>
+										<div class="table-transactions__item">$0.0017272</div>
+										<div class="table-transactions__item">$990.00</div>
+										<div class="table-transactions__item table-transactions__item--span">
+											<span class="assets-table__span">26 Oct, 2021
+											</span><span class="assets-table__span">18:57</span>
+										</div>
+										<div class="table-transactions__item table-transactions__item--name">
+											<a href="#" class="assets-table__body-block-img">
+												<img src="img/eth-item.svg" alt="eth-item">
+												<span class="assets-table__body-item--block">
+													<span class="assets-table__body-item--title">Buy ETH</span>
+													<span class="assets-table__body-item--text">Etherium</span>
+												</span>
+											</a>
+										</div>
+										<div class="table-transactions__item green">
+											+115,797.00 ETH</div>
+										<div class="table-transactions__item">$0.0017272</div>
+										<div class="table-transactions__item">$990.00</div>
+										<div class="table-transactions__item table-transactions__item--span">
+											<span class="assets-table__span">26 Oct, 2021
+											</span><span class="assets-table__span">18:57</span>
+										</div>
+									</div>
+									<div data-showmore class="table-transactions__showmore">
+										<div data-showmore-content="0" class="table-transactions__content">
+											<div class="table-transactions-block">
+												<div class="table-transactions__item table-transactions__item--name">
+													<a href="#" class="assets-table__body-block-img">
+														<img src="img/eth-item.svg" alt="eth-item">
+														<span class="assets-table__body-item--block">
+															<span class="assets-table__body-item--title">Buy ETH</span>
+															<span class="assets-table__body-item--text">Etherium</span>
+														</span>
+													</a>
+												</div>
+												<div class="table-transactions__item green">
+													+115,797.00 ETH</div>
+												<div class="table-transactions__item">$0.0017272</div>
+												<div class="table-transactions__item">$990.00</div>
+												<div class="table-transactions__item table-transactions__item--span">
+													<span class="assets-table__span">26 Oct, 2021
+													</span><span class="assets-table__span">18:57</span>
+												</div>
+												<div class="table-transactions__item table-transactions__item--name">
+													<a href="#" class="assets-table__body-block-img">
+														<img src="img/eth-item.svg" alt="eth-item">
+														<span class="assets-table__body-item--block">
+															<span class="assets-table__body-item--title">Buy ETH</span>
+															<span class="assets-table__body-item--text">Etherium</span>
+														</span>
+													</a>
+												</div>
+												<div class="table-transactions__item green">
+													+115,797.00 ETH</div>
+												<div class="table-transactions__item">$0.0017272</div>
+												<div class="table-transactions__item">$990.00</div>
+												<div class="table-transactions__item table-transactions__item--span">
+													<span class="assets-table__span">26 Oct, 2021
+													</span><span class="assets-table__span">18:57</span>
+												</div>
+												<div class="table-transactions__item table-transactions__item--name">
+													<a href="#" class="assets-table__body-block-img">
+														<img src="img/eth-item.svg" alt="eth-item">
+														<span class="assets-table__body-item--block">
+															<span class="assets-table__body-item--title">Buy ETH</span>
+															<span class="assets-table__body-item--text">Etherium</span>
+														</span>
+													</a>
+												</div>
+												<div class="table-transactions__item green">
+													+115,797.00 ETH</div>
+												<div class="table-transactions__item">$0.0017272</div>
+												<div class="table-transactions__item">$990.00</div>
+												<div class="table-transactions__item table-transactions__item--span">
+													<span class="assets-table__span">26 Oct, 2021
+													</span><span class="assets-table__span">18:57</span>
+												</div>
+												<div class="table-transactions__item table-transactions__item--name">
+													<a href="#" class="assets-table__body-block-img">
+														<img src="img/eth-item.svg" alt="eth-item">
+														<span class="assets-table__body-item--block">
+															<span class="assets-table__body-item--title">Buy ETH</span>
+															<span class="assets-table__body-item--text">Etherium</span>
+														</span>
+													</a>
+												</div>
+												<div class="table-transactions__item green">
+													+115,797.00 ETH</div>
+												<div class="table-transactions__item">$0.0017272</div>
+												<div class="table-transactions__item">$990.00</div>
+												<div class="table-transactions__item table-transactions__item--span">
+													<span class="assets-table__span">26 Oct, 2021
+													</span><span class="assets-table__span">18:57</span>
+												</div>
+												<div class="table-transactions__item table-transactions__item--name">
+													<a href="#" class="assets-table__body-block-img">
+														<img src="img/eth-item.svg" alt="eth-item">
+														<span class="assets-table__body-item--block">
+															<span class="assets-table__body-item--title">Buy ETH</span>
+															<span class="assets-table__body-item--text">Etherium</span>
+														</span>
+													</a>
+												</div>
+												<div class="table-transactions__item green">
+													+115,797.00 ETH</div>
+												<div class="table-transactions__item">$0.0017272</div>
+												<div class="table-transactions__item">$990.00</div>
+												<div class="table-transactions__item table-transactions__item--span">
+													<span class="assets-table__span">26 Oct, 2021
+													</span><span class="assets-table__span">18:57</span>
+												</div>
+												<div class="table-transactions__item table-transactions__item--name">
+													<a href="#" class="assets-table__body-block-img">
+														<img src="img/eth-item.svg" alt="eth-item">
+														<span class="assets-table__body-item--block">
+															<span class="assets-table__body-item--title">Buy ETH</span>
+															<span class="assets-table__body-item--text">Etherium</span>
+														</span>
+													</a>
+												</div>
+												<div class="table-transactions__item green">
+													+115,797.00 ETH</div>
+												<div class="table-transactions__item">$0.0017272</div>
+												<div class="table-transactions__item">$990.00</div>
+												<div class="table-transactions__item table-transactions__item--span">
+													<span class="assets-table__span">26 Oct, 2021
+													</span><span class="assets-table__span">18:57</span>
+												</div>
+												<div class="table-transactions__item table-transactions__item--name">
+													<a href="#" class="assets-table__body-block-img">
+														<img src="img/eth-item.svg" alt="eth-item">
+														<span class="assets-table__body-item--block">
+															<span class="assets-table__body-item--title">Buy ETH</span>
+															<span class="assets-table__body-item--text">Etherium</span>
+														</span>
+													</a>
+												</div>
+												<div class="table-transactions__item green">
+													+115,797.00 ETH</div>
+												<div class="table-transactions__item">$0.0017272</div>
+												<div class="table-transactions__item">$990.00</div>
+												<div class="table-transactions__item table-transactions__item--span">
+													<span class="assets-table__span">26 Oct, 2021
+													</span><span class="assets-table__span">18:57</span>
+												</div>
+											</div>
+										</div>
+										<button hidden data-showmore-button type="button" class="table-transactions__more"><span>Load more
+												Transactions</span><span>Hide</span></button>
 									</div>
 								</div>
 							</div>
 						</div>
-					</div>
-				</div>
 			</section>
 
 		</main>
@@ -3278,71 +3843,144 @@
 				<div class="popup__share-body">
 					<div class="popup__share-title">Share Portfolio</div>
 					<div class="popup__share-items">
-						<div class="popup__share-text">Permissions</div>
-						<div class="popup__share__select">
-							<select name="form[]" class="form">
-								<option value="1" selected>Launchpad</option>
-								<option value="2">Launchpad</option>
-								<option value="3">Launchpad</option>
-								<option value="4">Launchpad</option>
-							</select>
-							<div class="popup__share__currency">Full</div>
+						<div class="popup__share-texts">
+							<div class="popup__share-text">Permissions</div>
+							<div class="popup__share-text popup__share-text--dn">Share for each</div>
 						</div>
-						<div class="popup__share__select">
-							<select name="form[]" class="form">
-								<option value="1" selected>Tokens HoID</option>
-								<option value="2">Tokens HoID</option>
-								<option value="3">Tokens HoID</option>
-								<option value="4">Tokens HoID</option>
-							</select>
-							<div class="popup__share__currency">Full</div>
+						<div class="popup__share-item">
+							<div class="popup__share-item-body">
+								<div class="popup__share__select">
+									<select name="form[]" class="form">
+										<option value="1" selected>Launchpad</option>
+										<option value="2">Launchpad</option>
+										<option value="3">Launchpad</option>
+										<option value="4">Launchpad</option>
+									</select>
+									<div class="popup__share__currency">Full</div>
+								</div>
+							</div>
+							<div class="popup__share-item-body">
+								<input autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="" class="input popup__share-input">
+							</div>
+							<div class="popup__share-item-body">
+								<button type="button" class="popup__share-button">Copy Link</button>
+							</div>
 						</div>
-						<div class="popup__share__select">
-							<select name="form[]" class="form">
-								<option value="1" selected>IDO Token</option>
-								<option value="2">IDO Token</option>
-								<option value="3">IDO Token</option>
-								<option value="4">IDO Token</option>
-							</select>
-							<div class="popup__share__currency">Full</div>
+						<div class="popup__share-item">
+							<div class="popup__share-item-body">
+								<div class="popup__share__select">
+									<select name="form[]" class="form">
+										<option value="1" selected>Tokens HoID</option>
+										<option value="2">Tokens HoID</option>
+										<option value="3">Tokens HoID</option>
+										<option value="4">Tokens HoID</option>
+									</select>
+									<div class="popup__share__currency">Full</div>
+								</div>
+							</div>
+							<div class="popup__share-item-body">
+								<input autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="" class="input popup__share-input">
+							</div>
+							<div class="popup__share-item-body">
+								<button type="button" class="popup__share-button">Copy Link</button>
+							</div>
 						</div>
-						<div class="popup__share__select">
-							<select name="form[]" class="form">
-								<option value="1" selected>IDO | Buy Acc</option>
-								<option value="2">IDO | Buy Acc</option>
-								<option value="3">IDO | Buy Acc</option>
-								<option value="4">IDO | Buy Acc</option>
-							</select>
-							<div class="popup__share__currency">Full</div>
+						<div class="popup__share-item">
+							<div class="popup__share-item-body">
+								<div class="popup__share__select">
+									<select name="form[]" class="form">
+										<option value="1" selected>IDO Token</option>
+										<option value="2">IDO Token</option>
+										<option value="3">IDO Token</option>
+										<option value="4">IDO Token</option>
+									</select>
+									<div class="popup__share__currency">Full</div>
+								</div>
+							</div>
+							<div class="popup__share-item-body">
+								<input autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="" class="input popup__share-input">
+							</div>
+							<div class="popup__share-item-body">
+								<button type="button" class="popup__share-button">Copy Link</button>
+							</div>
 						</div>
-						<div class="popup__share__select">
-							<select name="form[]" class="form">
-								<option value="1" selected>IDO | Invest</option>
-								<option value="2">IDO | Invest</option>
-								<option value="3">IDO | Invest</option>
-								<option value="4">IDO | Invest</option>
-							</select>
-							<div class="popup__share__currency">Full</div>
+						<div class="popup__share-item">
+							<div class="popup__share-item-body">
+								<div class="popup__share__select">
+									<select name="form[]" class="form">
+										<option value="1" selected>IDO | Buy Acc</option>
+										<option value="2">IDO | Buy Acc</option>
+										<option value="3">IDO | Buy Acc</option>
+										<option value="4">IDO | Buy Acc</option>
+									</select>
+									<div class="popup__share__currency">Full</div>
+								</div>
+							</div>
+							<div class="popup__share-item-body">
+								<input autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="" class="input popup__share-input">
+							</div>
+							<div class="popup__share-item-body">
+								<button type="button" class="popup__share-button">Copy Link</button>
+							</div>
 						</div>
-						<div class="popup__share__select">
-							<select name="form[]" class="form">
-								<option value="1" selected>Farm</option>
-								<option value="2">Farm</option>
-								<option value="3">Farm</option>
-								<option value="4">Farm</option>
-							</select>
-							<div class="popup__share__currency">Full</div>
+						<div class="popup__share-item">
+							<div class="popup__share-item-body">
+								<div class="popup__share__select">
+									<select name="form[]" class="form">
+										<option value="1" selected>IDO | Invest</option>
+										<option value="2">IDO | Invest</option>
+										<option value="3">IDO | Invest</option>
+										<option value="4">IDO | Invest</option>
+									</select>
+									<div class="popup__share__currency">Full</div>
+								</div>
+							</div>
+							<div class="popup__share-item-body">
+								<input autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="" class="input popup__share-input">
+							</div>
+							<div class="popup__share-item-body">
+								<button type="button" class="popup__share-button">Copy Link</button>
+							</div>
 						</div>
-						<div class="popup__share__select">
-							<select name="form[]" class="form">
-								<option value="1" selected>WahLisT</option>
-								<option value="2">WahLisT</option>
-								<option value="3">WahLisT</option>
-								<option value="4">WahLisT</option>
-							</select>
-							<div class="popup__share__currency">Hide</div>
+						<div class="popup__share-item">
+							<div class="popup__share-item-body">
+								<div class="popup__share__select">
+									<select name="form[]" class="form">
+										<option value="1" selected>Farm</option>
+										<option value="2">Farm</option>
+										<option value="3">Farm</option>
+										<option value="4">Farm</option>
+									</select>
+									<div class="popup__share__currency">Full</div>
+								</div>
+							</div>
+							<div class="popup__share-item-body">
+								<input autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="" class="input popup__share-input">
+							</div>
+							<div class="popup__share-item-body">
+								<button type="button" class="popup__share-button">Copy Link</button>
+							</div>
 						</div>
-						<div class="popup__share-text">Sharing Link</div>
+						<div class="popup__share-item">
+							<div class="popup__share-item-body">
+								<div class="popup__share__select">
+									<select name="form[]" class="form">
+										<option value="1" selected>WahLisT</option>
+										<option value="2">WahLisT</option>
+										<option value="3">WahLisT</option>
+										<option value="4">WahLisT</option>
+									</select>
+									<div class="popup__share__currency">Hide</div>
+								</div>
+							</div>
+							<div class="popup__share-item-body">
+								<input autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="" class="input popup__share-input">
+							</div>
+							<div class="popup__share-item-body">
+								<button type="button" class="popup__share-button">Copy Link</button>
+							</div>
+						</div>
+						<div class="popup__share-text">Sharing Link for all</div>
 						<input autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="" value="https://" class="input popup__share-input">
 						<button type="button" class="popup__share-btn">Copy</button>
 					</div>
@@ -3351,6 +3989,158 @@
 		</div>
 	</div>
 
+	<div id="popup-buy" aria-hidden="true" class="popup popup-transaction popup-buy">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<button data-close type="button" class="popup__close">
+					<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path fill-rule="evenodd" clip-rule="evenodd" d="M12 20C16.4183 20 20 16.4183 20 12C20 7.58172 16.4183 4 12 4C7.58172 4 4 7.58172 4 12C4 16.4183 7.58172 20 12 20ZM12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" fill="black" />
+						<path fill-rule="evenodd" clip-rule="evenodd" d="M8.29289 8.29289C8.68342 7.90237 9.31658 7.90237 9.70711 8.29289L12 10.5858L14.2929 8.29289C14.6834 7.90237 15.3166 7.90237 15.7071 8.29289C16.0976 8.68342 16.0976 9.31658 15.7071 9.70711L13.4142 12L15.7071 14.2929C16.0976 14.6834 16.0976 15.3166 15.7071 15.7071C15.3166 16.0976 14.6834 16.0976 14.2929 15.7071L12 13.4142L9.70711 15.7071C9.31658 16.0976 8.68342 16.0976 8.29289 15.7071C7.90237 15.3166 7.90237 14.6834 8.29289 14.2929L10.5858 12L8.29289 9.70711C7.90237 9.31658 7.90237 8.68342 8.29289 8.29289Z" fill="black" />
+					</svg>
+				</button>
+				<h3 class="popup-transaction__title">Edit</h3>
+				<div data-tabs class="popup-transaction-tabs">
+					<nav data-tabs-titles class="popup-transaction-tabs__navigation">
+						<button type="button" class="popup-transaction-tabs__title _tab-active">Buy</button>
+						<button type="button" class="popup-transaction-tabs__title">Sell</button>
+					</nav>
+					<div data-tabs-body class="popup-transaction-tabs__content">
+						<div class="popup-transaction-tabs__body">
+							<div class="popup-transaction__texts">
+								<div class="popup-transaction__text">
+									Portfolio name: <span>Launchpad token</span>
+								</div>
+								<div class="popup-transaction__text">
+									Token name: <span>Sedus</span>
+								</div>
+							</div>
+							<form action="#" class="popup-transaction__form">
+								<div class="popup-transaction__block">
+									<label class="popup-transaction__label">Amount token</label>
+									<input autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="0" class="input popup-transaction__input popup-transaction__input--quantity">
+									<div class="popup-transaction__quantity">SIDUS</div>
+								</div>
+								<div class="popup-transaction__blocks">
+									<div class="popup-transaction__block">
+										<label class="popup-transaction__label">Market price</label>
+										<div class="popup-transaction__select">
+											<select name="form[]" class="form">
+												<option value="1" selected>0.0843</option>
+												<option value="2">0.353</option>
+												<option value="3">0.968</option>
+												<option value="4">0.0021</option>
+											</select>
+											<div class="popup-transaction__currency">USD</div>
+										</div>
+									</div>
+									<div class="popup-transaction__block">
+										<label class="popup-transaction__label popup-transaction__label--total">Total
+											<img src="img/icons/tippy.svg" alt="tippy" data-tippy-content="Tippy">
+										</label>
+										<input autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="0" class="input popup-transaction__input">
+										<div class="popup-transaction__currency total__currency">USD</div>
+									</div>
+								</div>
+								<div class="popup-transaction__block">
+									<label class="popup-transaction__label">Set Listing Date</label>
+									<div class="popup-transaction__dateblock">
+										<input autocomplete="off" type="date" name="form[]" data-error="Ошибка" class="input popup-transaction__input" value="2022-01-12">
+										<input autocomplete="off" type="time" name="form[]" data-error="Ошибка" class="input popup-transaction__input" value="06:32">
+									</div>
+								</div>
+								<div class="popup-transaction__form-title">Additional filters</div>
+								<div class="popup-transaction__blocks">
+									<div class="popup-transaction__block">
+										<label class="popup-transaction__label">Launchpad</label>
+										<div class="popup-transaction__select">
+											<select name="form[]" class="form">
+												<option value="1" selected>Red kite</option>
+												<option value="2">Red kite</option>
+												<option value="3">Red kite</option>
+												<option value="4">Red kite</option>
+											</select>
+											<div class="popup-transaction__percent">%</div>
+										</div>
+									</div>
+									<div class="popup-transaction__block">
+										<label class="popup-transaction__label">Your custom filter</label>
+										<input autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="0" class="input popup-transaction__input">
+									</div>
+								</div>
+								<div class="popup-transaction__block">
+									<label class="popup-transaction__label popup-transaction__label--total">Fee
+										<img src="img/icons/tippy.svg" alt="tippy" data-tippy-content="Tippy">
+									</label>
+									<div class="popup-transaction__select">
+										<select name="form[]" class="form">
+											<option value="1" selected>0</option>
+											<option value="2">20</option>
+											<option value="3">30</option>
+											<option value="4">100</option>
+										</select>
+										<div class="popup-transaction__percent">%</div>
+									</div>
+								</div>
+								<div class="popup-transaction__btns">
+									<a href="#" class="popup-transaction__back" data-popup="#popup-add">Back</a>
+									<button class="popup-transaction__btn">Add transaction</button>
+								</div>
+							</form>
+						</div>
+						<div class="popup-transaction-tabs__body">
+							<div class="popup-transaction__texts">
+								<div class="popup-transaction__text">
+									Portfolio name: <span>Launchpad token</span>
+								</div>
+								<div class="popup-transaction__text">
+									Token name: <span>Sedus</span>
+								</div>
+							</div>
+							<form action="#" class="popup-transaction__form">
+								<div class="popup-transaction__block">
+									<label class="popup-transaction__label">Amount token</label>
+									<input autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="0" class="input popup-transaction__input popup-transaction__input--quantity">
+									<div class="popup-transaction__quantity">SIDUS</div>
+								</div>
+								<div class="popup-transaction__blocks">
+									<div class="popup-transaction__block">
+										<label class="popup-transaction__label">Market price</label>
+										<div class="popup-transaction__select">
+											<select name="form[]" class="form">
+												<option value="1" selected>0.0843</option>
+												<option value="2">0.353</option>
+												<option value="3">0.968</option>
+												<option value="4">0.0021</option>
+											</select>
+											<div class="popup-transaction__currency">USD</div>
+										</div>
+									</div>
+									<div class="popup-transaction__block">
+										<label class="popup-transaction__label popup-transaction__label--total">Total
+											<img src="img/icons/tippy.svg" alt="tippy" data-tippy-content="Tippy">
+										</label>
+										<input autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="0" class="input popup-transaction__input">
+										<div class="popup-transaction__currency total__currency">USD</div>
+									</div>
+								</div>
+								<div class="popup-transaction__block">
+									<label class="popup-transaction__label">Set Listing Date</label>
+									<div class="popup-transaction__dateblock">
+										<input autocomplete="off" type="date" name="form[]" data-error="Ошибка" class="input popup-transaction__input" value="2022-01-12">
+										<input autocomplete="off" type="time" name="form[]" data-error="Ошибка" class="input popup-transaction__input" value="06:32">
+									</div>
+								</div>
+								<div class="popup-transaction__btns">
+									<a href="#" class="popup-transaction__back" data-popup="#popup-add">Back</a>
+									<button class="popup-transaction__btn">Add transaction</button>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 	<!-- <div id="popup" aria-hidden="true" class="popup">
 	<div class="popup__wrapper">
 		<div class="popup__content">
@@ -3360,7 +4150,7 @@
 		</div>
 	</div>
 </div> -->
-	<script src="js/app.min.js?_v=20220221103334"></script>
+	<script src="js/app.min.js?_v=20220221145226"></script>
 </body>
 
 </html>
