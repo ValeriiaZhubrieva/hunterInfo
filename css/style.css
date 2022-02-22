@@ -1655,7 +1655,7 @@ body::after {
 }
 .popup-sell-tokens__table {
   display: grid;
-  grid-template-columns: repeat(4, 195px);
+  grid-template-columns: repeat(4, 190px);
   margin-bottom: 1.25rem;
   height: 15.6875rem;
   overflow: auto;
