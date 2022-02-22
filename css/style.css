@@ -1662,6 +1662,10 @@ body::after {
   justify-content: end;
 }
 
+.popup-buy .popup__close {
+  top: 40px;
+}
+
 .popup-sell .popup-transaction__title {
   border-top: none;
   padding-top: 0;
