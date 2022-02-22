@@ -6545,11 +6545,6 @@
         const metamaskDropDown = document.querySelector(".dropdown-contract");
         toggleActionClass(metamaskBtnDrop, metamaskDropDown);
     }
-    if (document.querySelector(".settings__btn")) {
-        const assetsBtnDrop = document.querySelector(".settings__btn");
-        const assetsDropDown = document.querySelector(".settings__dropdown");
-        toggleActionClass(assetsBtnDrop, assetsDropDown);
-    }
     if (document.querySelector(".portfolio__assets-filter")) {
         const filterBtns = document.querySelectorAll(".portfolio__assets-filter");
         filterBtns.forEach((btn => {
@@ -6563,6 +6558,37 @@
         const informationDropDown = document.querySelector(".information__dropdown-list");
         toggleActionClass(informationBtnDrop, informationDropDown);
     }
+    if (document.querySelector(".assets__table")) {
+        const settingsBtn = document.querySelector(".settings__btn");
+        const assetsTableBodyInner = document.querySelectorAll(".assets-table__body-inner");
+        settingsBtn.addEventListener("click", (() => {
+            assetsTableBodyInner.forEach((el => {
+                el.classList.toggle("_active");
+            }));
+        }));
+    }
+    if (document.querySelector(".history__table")) {
+        const settingsBtn = document.querySelector(".settings__btn");
+        const historyTableBodyInner = document.querySelectorAll(".history-table__body-inner");
+        settingsBtn.addEventListener("click", (() => {
+            historyTableBodyInner.forEach((el => {
+                el.classList.toggle("_active");
+            }));
+        }));
+    }
+    const popupBuyTableItemBtns = document.querySelectorAll(".popup-buy__table-item--btn");
+    const popupBuyBody = document.querySelector(".popup-buy__body");
+    const popupSellBody = document.querySelector(".popup-sell__body");
+    popupBuyTableItemBtns.forEach((btn => {
+        btn.addEventListener("click", (() => {
+            popupBuyBody.classList.toggle("_active");
+        }));
+    }));
+    popupBuyTableItemBtns.forEach((btn => {
+        btn.addEventListener("click", (() => {
+            popupSellBody.classList.toggle("_active");
+        }));
+    }));
     window["FLS"] = true;
     isWebp();
     menuInit();
