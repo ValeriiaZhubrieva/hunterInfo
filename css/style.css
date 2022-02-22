@@ -466,6 +466,18 @@ body::after {
 
 .popup__close {
   position: absolute;
+  width: 1.5625rem;
+  height: 1.5625rem;
+  border-radius: 50%;
+  border: 2px solid #777e90;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.popup__close svg {
+  width: 0.9375rem;
+  height: 0.9375rem;
+  object-fit: cover;
 }
 
 .popup-login .popup__content {
@@ -1504,7 +1516,7 @@ body::after {
 .popup-sell__table {
   display: grid;
   grid-template-columns: repeat(5, 149px);
-  height: 18.5rem;
+  height: 19.25rem;
   overflow: auto;
   margin-bottom: 1.25rem;
 }
@@ -1516,6 +1528,7 @@ body::after {
   padding: 0.625rem 0.3125rem;
   text-align: center;
   color: #777e90;
+  border: 1px solid #e6e8ec;
 }
 .popup-buy__table-item.green,
 .popup-sell__table-item.green {
@@ -1561,8 +1574,42 @@ body::after {
 .popup-sell__block {
   display: flex;
   align-items: center;
-  gap: 1.25rem;
+  gap: 3.75rem;
+  padding-bottom: 1.875rem;
+  border-bottom: 2px solid #e6e8ec;
   margin-bottom: 1.25rem;
+}
+@media (min-width: 73.75em) {
+  .popup-buy__block,
+.popup-sell__block {
+    gap: 4.375rem;
+  }
+}
+@media (min-width: 20em) and (max-width: 73.75em) {
+  @supports (gap: clamp( 0.9375rem , -0.3415697674rem  +  6.3953488372vw , 4.375rem )) {
+    .popup-buy__block,
+.popup-sell__block {
+      gap: clamp( 0.9375rem , -0.3415697674rem  +  6.3953488372vw , 4.375rem );
+    }
+  }
+  @supports not (gap: clamp( 0.9375rem , -0.3415697674rem  +  6.3953488372vw , 4.375rem )) {
+    .popup-buy__block,
+.popup-sell__block {
+      gap: calc(0.9375rem + 3.4375 * (100vw - 20rem) / 53.75);
+    }
+  }
+}
+@media (max-width: 20em) {
+  .popup-buy__block,
+.popup-sell__block {
+    gap: 0.9375rem;
+  }
+}
+@media (max-width: 47.99875em) {
+  .popup-buy__block,
+.popup-sell__block {
+    gap: 0.9375rem;
+  }
 }
 @media (max-width: 42.5em) {
   .popup-buy__block,
@@ -1570,6 +1617,11 @@ body::after {
     flex-direction: column;
     text-align: center;
   }
+}
+.popup-buy .popup-transaction__title,
+.popup-sell .popup-transaction__title {
+  border-top: 2px solid #e6e8ec;
+  padding-top: 1.875rem;
 }
 .popup-buy__title,
 .popup-sell__title {
@@ -1608,6 +1660,11 @@ body::after {
 
 .table-transactions__item--span {
   justify-content: end;
+}
+
+.popup-sell .popup-transaction__title {
+  border-top: none;
+  padding-top: 0;
 }
 
 @media (max-width: 31.25em) {
@@ -1657,7 +1714,7 @@ body::after {
   display: grid;
   grid-template-columns: repeat(4, 190px);
   margin-bottom: 1.25rem;
-  height: 15.6875rem;
+  height: 15.5rem;
   overflow: auto;
 }
 .popup-sell-tokens__table-item {
@@ -6100,8 +6157,12 @@ body.dark .popup-transaction__select .select__options {
   background-color: #000;
 }
 body.dark .table-market__item,
-body.dark .popup-sell-tokens__table-item {
+body.dark .popup-sell-tokens__table-item,
+body.dark .popup-buy__table-item {
   border: 1px solid #33383f;
+}
+body.dark .popup-buy__block {
+  border-bottom: 2px solid #33383f;
 }
 body.dark .popup-buy__title {
   color: #fff;
@@ -6109,6 +6170,9 @@ body.dark .popup-buy__title {
 body.dark .popup-buy__table-item--head,
 body.dark .popup-sell-tokens__table-item--head {
   color: #fff;
+}
+body.dark .popup-buy .popup-transaction__title {
+  border-top: 2px solid #33383f;
 }
 .tippy-box[data-animation=fade][data-state=hidden] {
   opacity: 0;
