@@ -6589,6 +6589,11 @@
             popupSellBody.classList.toggle("_active");
         }));
     }));
+    if (document.querySelector(".dropdown-info")) {
+        const informationBtnDrop = document.querySelector(".info-list__select-title");
+        const informationDropDown = document.querySelector(".dropdown-info");
+        toggleActionClass(informationBtnDrop, informationDropDown);
+    }
     window["FLS"] = true;
     isWebp();
     menuInit();
