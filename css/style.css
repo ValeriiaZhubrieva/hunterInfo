@@ -6250,6 +6250,24 @@ body::after {
 .wrapper.wrapper__dark .vesting__filter-input {
   border: 1px solid #33383f;
 }
+.wrapper.wrapper__dark .dropdown-info {
+  background-color: #000;
+  border: 1px solid #33383f;
+}
+.wrapper.wrapper__dark .dropdown-info__item:not(:last-child) {
+  border-bottom: 1px solid #33383f;
+}
+.wrapper.wrapper__dark .dropdown-info__bal {
+  border-bottom: 1px solid #33383f;
+}
+@media (any-hover: hover) {
+  .wrapper.wrapper__dark .dropdown-info__item:hover {
+    background-color: #33383f;
+  }
+}
+.wrapper.wrapper__dark .dropdown-info__btn {
+  border: 1px solid #33383f;
+}
 
 body.dark .popup__content {
   background-color: #000;
@@ -6366,6 +6384,9 @@ body.dark .popup-sell-tokens__table-item--head {
 }
 body.dark .popup-buy .popup-transaction__title {
   border-top: 2px solid #33383f;
+}
+body.dark .popup-edit-list__title {
+  color: #fff;
 }
 .tippy-box[data-animation=fade][data-state=hidden] {
   opacity: 0;
